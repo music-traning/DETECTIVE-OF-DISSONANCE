@@ -4,7 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DETECTIVE OF DISSONANCE - Complete Saga</title>
+    
+    <title>DETECTIVE OF DISSONANCE - 不協和音の探偵</title>
+    <meta name="description" content="2026年、音楽がAIに管理された世界。不協和音（ノイズ）を救うため、一人の探偵が立ち上がる。ジャズの哲学を問う、全50ステージのハードボイルド・ノベルクイズゲーム。">
+    <meta name="keywords" content="ジャズ, 音楽理論, クイズゲーム, ハードボイルド, 不協和音, Detective of Dissonance, Jazz Theory, 無料ゲーム">
+    <meta name="author" content="buro">
+
+    <meta property="og:title" content="DETECTIVE OF DISSONANCE - 不協和音の探偵">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://detective-of-dissonance.vercel.app/">
+    <meta property="og:image" content="https://detective-of-dissonance.vercel.app/ogp.png">
+    <meta property="og:description" content="「お前の音は、俺にしか鳴らせない。」ジャズの哲学を問う、全50ステージのハードボイルド・ノベルクイズ。">
+    <meta property="og:site_name" content="DETECTIVE OF DISSONANCE">
+    <meta property="og:locale" content="ja_JP">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DETECTIVE OF DISSONANCE - 不協和音の探偵">
+    <meta name="twitter:description" content="「お前の音は、俺にしか鳴らせない。」ジャズの哲学を問う、全50ステージのハードボイルド・ノベルクイズ。">
+    <meta name="twitter:image" content="https://detective-of-dissonance.vercel.app/ogp.png">
+
+    <script>
+      window.va = window.va || function () { (window.va.q = window.va.q || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+    
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&display=swap"
         rel="stylesheet">
     <style>
@@ -965,7 +988,7 @@ function handleAnswer(choice) {
         // エンディング演出
         function playEnding() {
             const screen = document.getElementById('game-container');
-           const data = casesFromJSON[49]; 
+            const data = casesFromJSON[49]; 
             const endText = lang === 'jp' ? data.ending_jp : data.ending_en;
 
             // 画面を暗転・一掃
