@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETECTIVE OF DISSONANCE - Complete Saga</title>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #050505;
+            --main-color: #33ff00;
+            --dim-color: #1a8000;
+            --alert-color: #ff3333;
+            --flashback-color: #ffcc00;
+            --case-title-color: #00ffff;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--main-color);
+            font-family: 'DotGothic16', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            user-select: none;
+        }
+
+        body::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            background-size: 100% 2px, 3px 100%;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            z-index: 20;
+            color: var(--dim-color);
+        }
+
+        footer a {
+            color: var(--dim-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: var(--main-color);
+        }
+
+        #game-container {
+            width: 800px;
+            max-width: 95%;
+            height: 600px;
+            border: 2px solid var(--main-color);
+            padding: 10px;
+            box-shadow: 0 0 10px var(--main-color);
+            position: relative;
+            z-index: 1;
+            display: none;
+            flex-direction: column;
+        }
+
+        #lang-switch {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 30;
+            background: #000;
+            border: 1px solid var(--main-color);
+            color: var(--main-color);
+            padding: 5px;
+            cursor: pointer;
+            font-family: 'DotGothic16', sans-serif;
+        }
+
+        .overlay-screen {
+            text-align: center;
+            z-index: 20;
+            cursor: pointer;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .blink {
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        #visual-area {
+            flex: 0 0 250px;
+            border-bottom: 2px solid var(--main-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #001100;
+            margin-bottom: 10px;
+            font-size: 14px;
+            white-space: pre;
+            overflow: hidden;
+            line-height: 1.2;
+        }
+
+        #control-area {
+            flex: 1;
+            display: flex;
+            overflow: hidden;
+        }
+
+        #message-box {
+            flex: 2;
+            padding: 10px;
+            border-right: 2px solid var(--main-color);
+            font-size: 18px;
+            line-height: 1.6;
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: var(--main-color) var(--bg-color);
+        }
+
+        #message-box::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        #message-box::-webkit-scrollbar-track {
+            background: var(--bg-color);
+        }
+
+        #message-box::-webkit-scrollbar-thumb {
+            background-color: var(--main-color);
+            border: 2px solid var(--bg-color);
+        }
+
+        #command-box {
+            flex: 1;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            overflow-y: auto;
+        }
+
+        .btn {
+            background: transparent;
+            border: 1px solid var(--main-color);
+            color: var(--main-color);
+            padding: 10px;
+            font-family: inherit;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: left;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background-color: var(--main-color);
+            color: var(--bg-color);
+        }
+
+        .btn-disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        #status-bar {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+            border-bottom: 1px solid var(--dim-color);
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .chapter-title {
+            color: var(--case-title-color);
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--case-title-color);
+        }
+
+        .shake {
+            animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) both;
+        }
+
+        @keyframes shake {
+
+            10%,
+            90% {
+                transform: translate3d(-1px, 0, 0);
+            }
+
+            20%,
+            80% {
+                transform: translate3d(2px, 0, 0);
+            }
+
+            30%,
+            50%,
+            70% {
+                transform: translate3d(-4px, 0, 0);
+            }
+
+            40%,
+            60% {
+                transform: translate3d(4px, 0, 0);
+            }
+        }
+
+        /* モーダルの中身（枠）のデザイン */
+#result-box {
+    background-color: #000;
+    border: 2px solid var(--main-color);
+    padding: 15px;
+
+    /* --- サイズ調整（スマホ対応） --- */
+    /* 幅：スマホでは画面の85%を使って広くし、PCでは320pxで止める */
+    width: 85%;
+    max-width: 320px;
+
+    /* 高さ：画面の80%以上にはならないように制限 */
+    max-height: 80vh; 
+    
+    /* 中身があふれたらスクロールバーを出す */
+    overflow-y: auto; 
+    /* ------------------------------ */
+
+    box-shadow: 0 0 10px var(--dim-color);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#rs-title {
+    text-align: center;
+    margin: 0;
+    
+    /* タイトル文字サイズ縮小 */
+    font-size: 18px;       /* 24px → 18px */
+    
+    border-bottom: 1px solid var(--dim-color);
+    padding-bottom: 5px;
+}
+
+#rs-content {
+    /* 本文文字サイズ縮小 */
+    font-size: 14px;       /* 18px → 14px */
+    
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
+
+#rs-footer {
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* --- スマホ用レスポンシブ対応 --- */
+@media (max-width: 768px) {
+    /* コンテナ全体：高さを画面に合わせて調整 */
+    #game-container {
+        width: 95%;
+        height: 90vh; /* 画面の高さの90%を使う */
+        padding: 5px;
+    }
+
+    /* アスキーアートエリア：少し小さくする */
+    #visual-area {
+        flex: 0 0 120px; /* 高さを120pxに固定 */
+        font-size: 10px; /* アートが崩れないように文字サイズ調整 */
+    }
+
+    /* コントロールエリア：横並び(row)から縦並び(column)へ変更 */
+    #control-area {
+        flex-direction: column;
+    }
+
+    /* メッセージボックス（文章エリア） */
+    #message-box {
+        border-right: none; /* 右の線を消す */
+        border-bottom: 2px solid var(--main-color); /* 下に線を引く */
+        flex: 1; /* 余ったスペースを全部使う */
+        font-size: 14px; /* 少し文字を小さくして読みやすく */
+    }
+
+    /* コマンドボックス（ボタンエリア） */
+    #command-box {
+        flex: 0 0 180px; /* 高さを180px確保 */
+        padding: 5px;
+        gap: 5px;
+    }
+
+    /* ボタンの微調整 */
+    .btn {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <button id="lang-switch" onclick="toggleLang()">JP / EN</button>
+
+    <div id="start-screen" class="overlay-screen">
+        <h1 class="blink">DETECTIVE OF DISSONANCE</h1>
+        <p>The Complete Saga (Case 1-50)</p>
+        <br>
+        <div style="width: 200px; display: flex; flex-direction: column; gap: 10px;">
+            <button class="btn" onclick="startGame(true)">NEW GAME</button>
+            <button class="btn" id="continue-btn" onclick="startGame(false)">CONTINUE</button>
+            <button class="btn" onclick="resetGame()"
+                style="border-color: var(--alert-color); color: var(--alert-color);">RESET DATA</button>
+        </div>
+    </div>
+
+    <div id="opening-screen" class="overlay-screen" style="display: none; background-color: #000; z-index: 25;">
+    <div style="width: 80%; max-width: 600px; text-align: left;">
+        <div id="op-text" style="font-size: 18px; line-height: 2.0; min-height: 200px; white-space: pre-wrap;"></div>
+        <div id="op-footer" style="text-align: right; margin-top: 30px; opacity: 0; transition: opacity 1s;">
+            <button class="btn" onclick="endOpening()">START INVESTIGATION >></button>
+        </div>
+    </div>
+</div>
+
+    <div id="case-title-screen" class="overlay-screen" onclick="startCaseScene()">
+        <h3 id="ct-chapter" class="chapter-title">Chapter X</h3>
+        <h1 id="ct-num" style="display:inline-block; padding-bottom:10px;">Case X</h1>
+        <h2 id="ct-name">事件名</h2>
+        <p id="ct-theme" style="color: var(--dim-color);">Theme...</p>
+        <br><br>
+        <p class="blink">▼ CLICK TO INVESTIGATE ▼</p>
+    </div>
+
+    <div id="result-screen" class="overlay-screen" style="display: none;">
+    <div id="result-box">
+        <h2 id="rs-title" class="blink">RESULT</h2>
+        <div id="rs-content"></div>
+        <br>
+        <div id="rs-footer"></div>
+    </div>
+</div>
+
+    <div id="game-container">
+        <div id="status-bar">
+            <span id="place-display">PLACE: ???</span>
+            <span>
+                <span id="case-counter">CASE: 01/50</span> |
+                <span id="hp-display">MENTAL: ■■■■■</span>
+            </span>
+        </div>
+        <div id="visual-area">
+            <div id="ascii-art"></div>
+        </div>
+        <div id="control-area">
+            <div id="message-box"></div>
+            <div id="command-box"></div>
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://note.com/jazzy_begin" target="_blank">©2026 buro</a>
+    </footer>
+
+    <script src="cases.js"></script>
+    <script>
+        // --- 言語設定 ---
+        let lang = 'jp';
+
+        // --- チャプター情報 ---
+        const CHAPTERS = [
+            { id: 1, title_jp: "第1章：街はまだ静かだ", title_en: "Chapter 1: The City is Still Quiet", theme: "Basic Harmony & Dissonance" },
+            { id: 2, title_jp: "第2章：不協和の兆し", title_en: "Chapter 2: Signs of Dissonance", theme: "Tensions & Avoid Notes" },
+            { id: 3, title_jp: "第3章：裏側の理論", title_en: "Chapter 3: Theory of the Flipside", theme: "Tritone Subs & Substitutions" },
+            { id: 4, title_jp: "第4章：リズムは嘘をつかない", title_en: "Chapter 4: Rhythm Never Lies", theme: "Rhythm & Time Feel" },
+            { id: 5, title_jp: "第5章：スケールという檻", title_en: "Chapter 5: The Cage of Scales", theme: "Modes & Scale Dependency" },
+            { id: 6, title_jp: "第6章：過去が牙をむく", title_en: "Chapter 6: The Past Bares its Fangs", theme: "Phrases & Habits" },
+            { id: 7, title_jp: "第7章：音で支配する者たち", title_en: "Chapter 7: Those Who Rule by Sound", theme: "Brainwashing & Abuse of Theory" },
+            { id: 8, title_jp: "第8章：不完全さの価値", title_en: "Chapter 8: The Value of Imperfection", theme: "Intentional Mistakes" },
+            { id: 9, title_jp: "第9章：沈黙と選択", title_en: "Chapter 9: Silence and Choice", theme: "Silence & Decisions" },
+            { id: 10, title_jp: "第10章：鳴らすべき一音", title_en: "Chapter 10: The Note That Must Be Played", theme: "The Reckoning" }
+        ];
+
+        // --- ケースメタデータ（intro/problem/correct_msg/endingはJSONから） ---
+        const CASES_META = [
+            { num: 1, jp: "濁ったブルーノート", en: "The Dirty Blue Note", quote_jp: "音は狂い始めているが、まだ街はそれに気づいていない", quote_en: "The sound is starting to go mad, but the city hasn't noticed yet." },
+            { num: 2, jp: "五線譜に書かれた遺書", en: "The Will on the Staff", quote_jp: "沈黙もまた、ひとつの音だ", quote_en: "Silence is also a note." },
+            { num: 3, jp: "壊れたメトロノーム", en: "The Broken Metronome", quote_jp: "時間がズレているのではない。感覚がズレているのだ", quote_en: "Time isn't off. The feeling is off." },
+            { num: 4, jp: "消えたキングの影", en: "Shadow of the Missing King", quote_jp: "王冠を外した瞬間、王はただの標的になる", quote_en: "The moment the crown is removed, the king becomes a target." },
+            { num: 5, jp: "黄昏のコードトーン", en: "Twilight Chord Tones", quote_jp: "逃げるべき音を知ることは、生き残ることだ", quote_en: "Knowing which notes to flee is knowing how to survive." },
+            { num: 6, jp: "甘すぎる9th", en: "The Too-Sweet 9th", quote_jp: "足し算は簡単だ。だが引き算は覚悟がいる", quote_en: "Addition is easy. Subtraction requires resolve." },
+            { num: 7, jp: "濁った11th", en: "The Muddy 11th", quote_jp: "不協和音は、解決への渇望を生む", quote_en: "Dissonance creates a thirst for resolution." },
+            { num: 8, jp: "消された13th", en: "The Erased 13th", quote_jp: "テンションを積み上げすぎると、土台が崩れる", quote_en: "Pile on too many tensions, and the foundation crumbles." },
+            { num: 9, jp: "解決しないドミナント", en: "The Unresolved Dominant", quote_jp: "期待を持たせて裏切る。それがジャズだ", quote_en: "Raise expectations, then betray them. That is jazz." },
+            { num: 10, jp: "音が多すぎる夜", en: "The Night of Too Many Notes", quote_jp: "言葉が多い奴ほど、中身は空っぽだ", quote_en: "The more notes, the less meaning." },
+            { num: 11, jp: "裏切りのトライトーン", en: "The Betrayal of the Tritone", quote_jp: "正面突破は、いつも素人のやり方だ", quote_en: "A frontal assault is always the amateur's way." },
+            { num: 12, jp: "偽りのツーファイブ", en: "The False Two-Five", quote_jp: "嘘の中にこそ、真実の響きがある", quote_en: "Within the lie, the true sound resonates." },
+            { num: 13, jp: "二つ目の解決", en: "The Second Resolution", quote_jp: "ゴールは一つではない", quote_en: "There is never just one destination." },
+            { num: 14, jp: "正しい嘘", en: "The Righteous Lie", quote_jp: "ルールを破るために、ルールを学ぶ", quote_en: "Learn the rules so you can break them." },
+            { num: 15, jp: "裏口から入る男", en: "The Man from the Backdoor", quote_jp: "正規の入り口は罠だらけだ", quote_en: "The front door is full of traps." },
+            { num: 16, jp: "走るドラマー", en: "The Rushing Drummer", quote_jp: "間違えたのは音じゃない。呼吸だ", quote_en: "It wasn't the note that was wrong. It was the breath." },
+            { num: 17, jp: "重すぎるワン", en: "The Too-Heavy One", quote_jp: "一拍目にすべてを賭けるな", quote_en: "Don't bet everything on the one." },
+            { num: 18, jp: "消えたツーとフォー", en: "The Vanished Two and Four", quote_jp: "裏拍を感じない人生は、ただの行進曲だ", quote_en: "Life without the backbeat is just a march." },
+            { num: 19, jp: "休符の中の叫び", en: "The Scream Inside the Rest", quote_jp: "音がない瞬間こそ、最も音楽的だ", quote_en: "The moment without sound is the most musical." },
+            { num: 20, jp: "テンポのない人生", en: "Life Without Tempo", quote_jp: "自分の脈拍だけが、正しいメトロノームだ", quote_en: "Your own pulse is the only true metronome." },
+            { num: 21, jp: "メジャーに閉じ込められた男", en: "Trapped in Major", quote_jp: "明るすぎる世界は、時に狂気だ", quote_en: "A world too bright is sometimes madness." },
+            { num: 22, jp: "ドリアンの誘惑", en: "Dorian's Temptation", quote_jp: "理論は自由をくれるが、信じすぎると牢屋になる", quote_en: "Theory gives freedom, but too much belief builds a prison." },
+            { num: 23, jp: "フリジアンの影", en: "Shadow of Phrygian", quote_jp: "暗闇にも色彩がある", quote_en: "Even darkness has color." },
+            { num: 24, jp: "リディアンは眩しすぎる", en: "Lydian is Too Bright", quote_jp: "浮遊感は、現実逃避の始まりだ", quote_en: "Floating is the start of escaping reality." },
+            { num: 25, jp: "モードに殺される", en: "Killed by Modes", quote_jp: "形に囚われるな。魂を込めろ", quote_en: "Don't be trapped by the form. Pour in your soul." },
+            { num: 26, jp: "同じソロを弾く死体", en: "The Corpse Playing the Same Solo", quote_jp: "上達とは、忘れることだ", quote_en: "Improvement is the art of forgetting." },
+            { num: 27, jp: "指が勝手に動く", en: "Fingers Move on Their Own", quote_jp: "手癖は、思考の放棄だ", quote_en: "Muscle memory is the abandonment of thought." },
+            { num: 28, jp: "昔の俺は上手かった", en: "I Used to be Good", quote_jp: "過去の栄光は、ただのノイズだ", quote_en: "Past glory is just noise." },
+            { num: 29, jp: "忘れられない一音", en: "The Unforgettable Note", quote_jp: "記憶は美化される。録音だけが真実だ", quote_en: "Memory is embellished. Only the recording is truth." },
+            { num: 30, jp: "再生ボタンは押すな", en: "Don't Press Play", quote_jp: "今の音がすべてだ", quote_en: "The current note is everything." },
+            { num: 31, jp: "正しすぎる講師", en: "The Too-Correct Teacher", quote_jp: "正解だけを教える奴は、だいたい危ない", quote_en: "Those who teach only the right answers are usually dangerous." },
+            { num: 32, jp: "教科書通りの殺人", en: "Textbook Murder", quote_jp: "マニュアル通りに生きれば、マニュアル通りに死ぬ", quote_en: "Live by the manual, die by the manual." },
+            { num: 33, jp: "誰も疑問を持たない", en: "No One Questions", quote_jp: "疑うことからジャズは始まる", quote_en: "Jazz begins with doubt." },
+            { num: 34, jp: "音楽学校の地下", en: "Basement of the Music School", quote_jp: "綺麗な教室では、泥臭いブルースは学べない", quote_en: "You can't learn dirty blues in a clean classroom." },
+            { num: 35, jp: "教える者の罪", en: "The Sin of the Teacher", quote_jp: "生徒を自分のコピーにするな", quote_en: "Don't make students your copies." },
+            { num: 36, jp: "わざと外した音", en: "The Intentionally Missed Note", quote_jp: "人は、不完全なものにだけ感情を預ける", quote_en: "Humans only entrust their emotions to the imperfect." },
+            { num: 37, jp: "上手すぎる演奏", en: "Playing Too Well", quote_jp: "完璧な演奏は、BGMにしかならない", quote_en: "Perfect performance is just background music." },
+            { num: 38, jp: "ミスが一番美しい夜", en: "The Night the Mistake was Beautiful", quote_jp: "傷跡こそが、その楽器の歴史だ", quote_en: "Scars are the history of the instrument." },
+            { num: 39, jp: "完璧を壊せ", en: "Break the Perfection", quote_jp: "壊れたところから光が入る", quote_en: "Light enters through the cracks." },
+            { num: 40, jp: "音楽は競技じゃない", en: "Music is Not a Sport", quote_jp: "速く弾くことより、深く弾くことだ", quote_en: "It's not about playing fast, it's about playing deep." },
+            { num: 41, jp: "弾かないという選択", en: "The Choice Not to Play", quote_jp: "やめる勇気も、才能だ", quote_en: "The courage to quit is also a talent." },
+            { num: 42, jp: "音を捨てた男", en: "The Man Who Abandoned Sound", quote_jp: "楽器を置いても、音楽は止まらない", quote_en: "Even if you put down the instrument, the music doesn't stop." },
+            { num: 43, jp: "何も鳴らさない夜", en: "The Silent Night", quote_jp: "静寂は、最強のフォルテシモだ", quote_en: "Silence is the strongest fortissimo." },
+            { num: 44, jp: "最後の依頼", en: "The Final Request", quote_jp: "終わりの始まりだ", quote_en: "It is the beginning of the end." },
+            { num: 45, jp: "ケースを閉じる日", en: "The Day to Close the Case", quote_jp: "さよならは、次の曲へのイントロだ", quote_en: "Goodbye is just the intro to the next song." },
+            { num: 46, jp: "もう一度だけ", en: "Just One More Time", quote_jp: "アンコールは用意されていない", quote_en: "There is no encore prepared." },
+            { num: 47, jp: "正解じゃない音", en: "The Incorrect Note", quote_jp: "それが俺の音だ", quote_en: "That is my sound." },
+            { num: 48, jp: "失敗してもいい", en: "It's Okay to Fail", quote_jp: "転んだ先にも、新しいコードがある", quote_en: "Even where you fall, there is a new chord." },
+            { num: 49, jp: "俺の音", en: "My Sound", quote_jp: "誰かの真似は、もう終わりだ", quote_en: "Imitating others is over." },
+            { num: 50, jp: "それでも鳴らす", en: "Play It Anyway", quote_jp: "人生は不協和音だ。だが、だからこそ続けられる", quote_en: "Life is dissonance. But that is why we continue." }
+        ];
+
+        // --- オープニングテキスト ---
+const OPENING_TEXT = {
+    jp: `西暦2026年。
+音楽はAIによって管理され、
+完璧な「協和音」だけが許される世界。
+
+だが、俺の耳は騙せない。
+街の隙間に潜む、悲鳴のようなノイズが聞こえる。
+
+解決されないコード。
+居場所のない音。
+
+俺は、それらを救うためにここにいる。
+不協和音（ディソナンス）の探偵として。`,
+    
+    en: `The year is 2026.
+Music is controlled by AI,
+and only perfect "consonance" is allowed.
+
+But my ears cannot be fooled.
+I hear the noise lurking in the cracks of the city, like a scream.
+
+Unresolved chords.
+Notes with no place to belong.
+
+I am here to save them.
+As a detective of dissonance.`
+};
+
+        // --- グローバル変数 ---
+        let casesFromJSON = [];
+        let casesLoaded = false;
+
+        // --- JSONロード関数 (JSファイル変え) ---
+        async function loadCasesJSON() {
+            // 文字化け回避のため、JSONファイルではなくJSファイルからデータを読み込みます
+            if (window.CASES_DATA) {
+                casesFromJSON = window.CASES_DATA;
+                casesLoaded = true;
+                console.log(`✓ Loaded ${casesFromJSON.length} cases from cases.js`);
+            } else {
+                console.error('CASES_DATA not found. cases.js load failed.');
+                alert('Game data (cases.js) could not be loaded.');
+                casesLoaded = false;
+            }
+        }
+
+        // --- 問題生成関数 ---
+        function generateProblem(caseIndex) {
+            if (!casesLoaded || caseIndex >= casesFromJSON.length) {
+                return {
+                    art: '',
+                    intro: 'Error: Case data not loaded',
+                    problem: '',
+                    choices: []
+                };
+            }
+
+            const caseData = casesFromJSON[caseIndex];
+            const intro = lang === 'jp' ? caseData.intro_jp : caseData.intro_en;
+            const problem = lang === 'jp' ? caseData.problem_jp : caseData.problem_en;
+            const correctMsg = lang === 'jp' ? caseData.correct_msg_jp : caseData.correct_msg_en;
+            const ending = lang === 'jp' ? caseData.ending_jp : caseData.ending_en;
+
+            // 選択肢を生成
+            const choices = caseData.choices.map((ch, idx) => {
+                const label = lang === 'jp' ? ch.label_jp : ch.label_en;
+                const msg = lang === 'jp' ? ch.msg_jp : ch.msg_en;
+                return {
+                    label: label,
+                    result: ch.result,
+                    msg: msg,
+                    correctMsg: correctMsg,
+                    ending: ending
+                };
+            });
+
+            return {
+                art: getArt(caseIndex),
+                intro: intro,
+                problem: problem,
+                choices: shuffle(choices),
+                correctMsg: correctMsg,
+                ending: ending
+            };
+        }
+
+        function getArt(idx) {
+            const arts = [
+                `
+      \\   |   /
+     ___\\_|_/___
+    (   \\o/   )
+     \\___|___/`,
+                `
+     .---.
+    /_   _\\
+    ( o_o )
+     (_-_)`,
+                `
+   ________
+  |  JAZZ  |
+  |  ( )   |
+  |__|_|___|`
+            ];
+            return arts[idx % 3];
+        }
+
+        function shuffle(array) {
+            return array.sort(() => Math.random() - 0.5);
+        }
+
+        // --- オーディオ初期化 ---
+        let audioCtx;
+        function initAudio() {
+            if (!audioCtx) {
+                const AudioContext = window.AudioContext || window.webkitAudioContext;
+                audioCtx = new AudioContext();
+            }
+            if (audioCtx.state === 'suspended') audioCtx.resume();
+        }
+
+        function playBeep(type) {
+            if (!audioCtx) return;
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+
+            if (type === 'type') {
+                osc.type = 'square';
+                osc.frequency.value = 1200;
+                gain.gain.setValueAtTime(0.03, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.05);
+                osc.start();
+                osc.stop(audioCtx.currentTime + 0.05);
+            } else if (type === 'damage') {
+                osc.type = 'sawtooth';
+                osc.frequency.setValueAtTime(150, audioCtx.currentTime);
+                osc.frequency.linearRampToValueAtTime(50, audioCtx.currentTime + 0.3);
+                gain.gain.setValueAtTime(0.2, audioCtx.currentTime);
+                gain.gain.linearRampToValueAtTime(0, audioCtx.currentTime + 0.3);
+                osc.start();
+                osc.stop(audioCtx.currentTime + 0.3);
+            } else if (type === 'correct') {
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(440, audioCtx.currentTime);
+                osc.frequency.exponentialRampToValueAtTime(880, audioCtx.currentTime + 0.1);
+                gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
+                gain.gain.linearRampToValueAtTime(0, audioCtx.currentTime + 0.3);
+                osc.start();
+                osc.stop(audioCtx.currentTime + 0.3);
+            }
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+        }
+
+        // --- ゲーム状態 ---
+        let currentCaseIndex = 0;
+        let hp = 5;
+        let isTyping = false;
+        let typingTimer = null; // ★これを追加（タイマーID管理用）
+
+        // --- LocalStorage ---
+        function saveProgress() {
+            localStorage.setItem('dissonance_case', currentCaseIndex);
+            localStorage.setItem('dissonance_hp', hp);
+        }
+
+        function loadProgress() {
+            const savedCase = localStorage.getItem('dissonance_case');
+            const savedHp = localStorage.getItem('dissonance_hp');
+            if (savedCase !== null) {
+                currentCaseIndex = parseInt(savedCase);
+                hp = parseInt(savedHp);
+                return true;
+            }
+            return false;
+        }
+
+        function resetGame() {
+            if (confirm(lang === 'jp' ? "本当にデータを消去しますか？" : "Are you sure you want to reset data?")) {
+                localStorage.removeItem('dissonance_case');
+                localStorage.removeItem('dissonance_hp');
+                alert(lang === 'jp' ? "データを消去しました" : "Data reset.");
+                location.reload();
+            }
+        }
+
+        // --- UI ---
+        function toggleLang() {
+    // 1. 言語変数を切り替え
+    lang = lang === 'jp' ? 'en' : 'jp';
+    document.getElementById('lang-switch').innerText = lang === 'jp' ? 'JP / EN' : 'EN / JP';
+    
+    // 2. スタート画面のボタン更新（続きから 等）
+    updateStartScreen();
+
+    // 3. ★ここを追加：現在表示中の画面を強制的に再描画する
+    const titleScreen = document.getElementById('case-title-screen');
+    const gameContainer = document.getElementById('game-container');
+
+    // 事件タイトル画面（Case X...）が表示されている場合
+    if (titleScreen.style.display === 'flex') {
+        showCaseTitle();
+    }
+    // ゲーム本編（本文）が表示されている場合
+    else if (gameContainer.style.display === 'flex') {
+        renderScene(); // これを呼ぶことで、新しい言語でタイピング演出が再スタートします
+    }
+}
+
+        function updateStartScreen() {
+            const hasSave = localStorage.getItem('dissonance_case') !== null;
+            document.getElementById('continue-btn').classList.toggle('btn-disabled', !hasSave);
+            document.getElementById('continue-btn').innerText = lang === 'jp' ? "続きから" : "CONTINUE";
+        }
+
+        // --- ゲーム開始 ---
+        async function startGame(isNew) {
+            initAudio();
+
+            if (isNew) {
+                currentCaseIndex = 0;
+                hp = 5;
+                saveProgress();
+
+                document.getElementById('start-screen').style.display = 'none';
+        playOpening(); // ★ここを変更：いきなりタイトルへ行かずオープニングへ
+            } else {
+                if (!loadProgress()) return;
+                document.getElementById('start-screen').style.display = 'none';
+        showCaseTitle();
+            }
+
+            document.getElementById('start-screen').style.display = 'none';
+            showCaseTitle();
+        }
+
+        function playOpening() {
+    const screen = document.getElementById('opening-screen');
+    const textBox = document.getElementById('op-text');
+    const footer = document.getElementById('op-footer');
+    
+    screen.style.display = 'flex';
+    textBox.innerHTML = "";
+    footer.style.opacity = "0"; // ボタンを隠しておく
+
+    const text = lang === 'jp' ? OPENING_TEXT.jp : OPENING_TEXT.en;
+    let i = 0;
+
+    // 既存のタイピングがあれば止める
+    if (typingTimer) clearTimeout(typingTimer);
+    isTyping = true;
+
+    function typeOp() {
+        if (i < text.length) {
+            const char = text.charAt(i);
+            textBox.innerHTML += char === '\n' ? '<br>' : char;
+            if (char !== ' ' && char !== '\n') playBeep('type');
+            i++;
+            // 少しゆっくりめに表示
+            typingTimer = setTimeout(typeOp, 60); 
+        } else {
+            isTyping = false;
+            typingTimer = null;
+            // 完了したらボタンをふわっと表示
+            footer.style.opacity = "1";
+        }
+    }
+    typeOp();
+    
+    // 画面クリックでスキップできるようにする
+    screen.onclick = () => {
+        if (isTyping) {
+            if (typingTimer) clearTimeout(typingTimer);
+            isTyping = false;
+            typingTimer = null;
+            textBox.innerHTML = text.replace(/\n/g, '<br>'); // 全文表示
+            footer.style.opacity = "1";
+        }
+    };
+}
+
+// --- オープニング終了（新規追加） ---
+function endOpening() {
+    // ボタンのクリックイベント伝播で再スキップが走らないようにする
+    event.stopPropagation();
+    
+    document.getElementById('opening-screen').style.display = 'none';
+    showCaseTitle(); // Case 1のタイトル画面へ
+}
+
+        function showCaseTitle() {
+            document.getElementById('game-container').style.display = 'none';
+            const screen = document.getElementById('case-title-screen');
+            screen.style.display = 'flex';
+
+            const meta = CASES_META[currentCaseIndex];
+            const chapterId = Math.ceil(meta.num / 5);
+            const chapter = CHAPTERS.find(ch => ch.id === chapterId);
+
+            document.getElementById('ct-chapter').innerText = lang === 'jp' ? chapter.title_jp : chapter.title_en;
+            document.getElementById('ct-num').innerText = "Case " + meta.num;
+            document.getElementById('ct-name').innerText = lang === 'jp' ? meta.jp : meta.en;
+            document.getElementById('ct-theme').innerText = "Theme: " + chapter.theme;
+        }
+
+        function startCaseScene() {
+            document.getElementById('case-title-screen').style.display = 'none';
+            document.getElementById('game-container').style.display = 'flex';
+            renderScene();
+        }
+
+        function renderScene() {
+            if (typingTimer) {
+                clearTimeout(typingTimer);
+                typingTimer = null;
+            }
+
+            const meta = CASES_META[currentCaseIndex];
+            const problem = generateProblem(currentCaseIndex);
+
+            document.getElementById('place-display').innerText = "PLACE: " + (lang === 'jp' ? "街" : "CITY");
+            document.getElementById('case-counter').innerText = `CASE: ${("0" + meta.num).slice(-2)}/50`;
+            updateHP();
+
+            document.getElementById('ascii-art').innerText = problem.art;
+
+            const msgBox = document.getElementById('message-box');
+            msgBox.innerHTML = "";
+            document.getElementById('command-box').innerHTML = "";
+
+            isTyping = true;
+            let i = 0;
+            let fullText = `[${lang === 'jp' ? meta.jp : meta.en}]\n\n${problem.intro}\n\n---\n\n${problem.problem}`;
+
+            function type() {
+                if (i < fullText.length) {
+                    const char = fullText.charAt(i);
+                    msgBox.innerHTML += char === '\n' ? '<br>' : char;
+                    msgBox.scrollTop = msgBox.scrollHeight;
+                    if (char !== ' ' && char !== '\n') playBeep('type');
+                    i++;
+                    typingTimer = setTimeout(type, 30);
+                } else {
+                    isTyping = false;
+                    typingTimer = null; // 終わったら空にする
+                    showChoices(problem.choices);
+                }
+            }
+            type();
+        }
+
+        function showChoices(choices) {
+            const cmd = document.getElementById('command-box');
+            choices.forEach(ch => {
+                const btn = document.createElement('button');
+                btn.className = 'btn';
+                btn.innerText = ch.label;
+                btn.onclick = () => handleAnswer(ch);
+                cmd.appendChild(btn);
+            });
+        }
+
+        // --- 新しいモーダル表示関数 ---
+function showModal(title, contentHtml, buttons) {
+    const screen = document.getElementById('result-screen');
+    const titleEl = document.getElementById('rs-title');
+    const contentEl = document.getElementById('rs-content');
+    const footerEl = document.getElementById('rs-footer');
+
+    // タイトル設定（正解なら黄色、ミスなら赤っぽく）
+    titleEl.innerText = title;
+    titleEl.style.color = (title === 'CORRECT!' || title === '正解！') ? '#ffff00' : '#ff3333';
+
+    // 本文設定
+    contentEl.innerHTML = contentHtml;
+
+    // ボタン生成
+    footerEl.innerHTML = "";
+    buttons.forEach(btnConfig => {
+        const btn = document.createElement('button');
+        btn.className = 'btn';
+        btn.innerText = btnConfig.text;
+        btn.onclick = btnConfig.action;
+        btn.style.margin = "0 10px";
+        footerEl.appendChild(btn);
+    });
+
+    // 表示
+    screen.style.display = 'flex';
+}
+
+      // --- handleAnswerの書き換え ---
+function handleAnswer(choice) {
+            if (isTyping) return;
+
+            if (choice.result === 'win') {
+                // === 正解の場合 ===
+                playBeep('correct');
+
+                const meta = CASES_META[currentCaseIndex];
+                const quote = lang === 'jp' ? meta.quote_jp : meta.quote_en;
+
+                const content = `<span style="color:#00ffff">${choice.correctMsg}</span><br><br>
+        <span style="color:#ffcc00">${choice.ending}</span><br><br>
+        <span style="color:#00ffff; font-style:italic;">"${quote}"</span>`;
+
+                // 「次の事件へ」ボタンの動作
+                const nextAction = () => {
+                    document.getElementById('result-screen').style.display = 'none'; // モーダルを閉じる
+
+                    if (currentCaseIndex < CASES_META.length - 1) { // まだ事件がある場合
+                        currentCaseIndex++;
+                        saveProgress();
+                        showCaseTitle();
+                    } else {
+                        // ★ここを修正：アラートではなくエンディング関数を呼ぶ
+                        playEnding(); 
+                    }
+                };
+
+                const btnText = (currentCaseIndex < CASES_META.length - 1)
+                    ? (lang === 'jp' ? "次の事件へ" : "NEXT CASE")
+                    : "THE END";
+
+                showModal(
+                    lang === 'jp' ? "正解！" : "CORRECT!",
+                    content,
+                    [{ text: btnText, action: nextAction }]
+                );
+
+            } else {
+                // === 不正解の場合 ===
+                playBeep('damage');
+
+                document.getElementById('game-container').classList.add('shake');
+                setTimeout(() => document.getElementById('game-container').classList.remove('shake'), 500);
+
+                hp--;
+                updateHP();
+
+                if (hp <= 0) {
+                    const content = lang === 'jp' ? "意識が遠のく... (GAME OVER)" : "Fading out... (GAME OVER)";
+                    showModal(
+                        "GAME OVER",
+                        content,
+                        [{ text: lang === 'jp' ? "タイトルへ" : "TITLE", action: () => location.reload() }]
+                    );
+                } else {
+                    const content = choice.msg || "Miss!";
+                    showModal(
+                        lang === 'jp' ? "不正解..." : "WRONG...",
+                        content,
+                        [{
+                            text: lang === 'jp' ? "閉じる" : "CLOSE",
+                            action: () => { document.getElementById('result-screen').style.display = 'none'; }
+                        }]
+                    );
+                }
+            }
+        }
+
+        function showResult(choice) {
+            const meta = CASES_META[currentCaseIndex];
+            const msgBox = document.getElementById('message-box');
+            const quote = lang === 'jp' ? meta.quote_jp : meta.quote_en;
+
+            msgBox.innerHTML += `<br><br><span style="color:#ffff00">正解！</span><br><br><span style="color:#00ffff">${choice.correctMsg}</span><br><br><span style="color:#ffcc00">${choice.ending}</span><br><br><span style="color:#00ffff">"${quote}"</span><br><br>`;
+            msgBox.scrollTop = msgBox.scrollHeight;
+
+            document.getElementById('command-box').innerHTML = "";
+
+            const nextBtn = document.createElement('button');
+            nextBtn.className = 'btn';
+
+            if (currentCaseIndex < 49) {
+                nextBtn.innerText = lang === 'jp' ? "次の事件へ" : "NEXT CASE";
+                nextBtn.onclick = () => {
+                    currentCaseIndex++;
+                    saveProgress();
+                    showCaseTitle();
+                };
+            } else {
+                nextBtn.innerText = "THE END";
+                nextBtn.className = 'btn glitch-effect'; // 最後のボタンに少し演出を
+                nextBtn.onclick = () => {
+                    playEnding(); // 新しいエンディング関数を呼ぶ
+                };
+            }
+            document.getElementById('command-box').appendChild(nextBtn);
+        }
+
+        function updateHP() {
+            let bar = "";
+            for (let i = 0; i < 5; i++) bar += i < hp ? "■" : "□";
+            const el = document.getElementById('hp-display');
+            el.innerText = "MENTAL: " + bar;
+            el.style.color = hp <= 2 ? "#ff3333" : "#33ff00";
+        }
+
+        // エンディング演出
+        function playEnding() {
+            const screen = document.getElementById('game-container');
+           const data = casesFromJSON[49]; 
+            const endText = lang === 'jp' ? data.ending_jp : data.ending_en;
+
+            // 画面を暗転・一掃
+            screen.innerHTML = '';
+            screen.style.justifyContent = 'flex-start'; // 上から流れるように
+            screen.style.overflowY = 'auto'; // スクロール可能に
+
+            // エンドロール用コンテナ
+            const endContainer = document.createElement('div');
+            endContainer.style.maxWidth = '600px';
+            endContainer.style.padding = '40px 20px';
+            endContainer.style.textAlign = 'center';
+            endContainer.style.animation = 'fadeIn 3s ease-in';
+            
+            // 1. エピローグ（Case 50のエンディングテキスト）
+            const epilogue = document.createElement('div');
+            epilogue.innerHTML = endText.replace(/\n/g, '<br>');
+            epilogue.style.marginBottom = '80px';
+            epilogue.style.lineHeight = '2.0';
+            epilogue.style.color = '#ffcc00'; // フラッシュバックカラー
+            endContainer.appendChild(epilogue);
+
+            // 2. スタッフクレジット
+            const creditsData = [
+                { role: "DETECTIVE OF DISSONANCE", name: "" }, // 余白
+                { role: "Director & Programmer", name: "Gemini3.0Pro & buro" },
+                { role: "Scenario Writer", name: "Gemini3.0Pro" },
+                { role: "Special Thanks", name: "My Mentor（我が恩師）" }, 
+                { role: "And...", name: "All Jazz Giants & You" }
+            ];
+
+            creditsData.forEach(credit => {
+                const row = document.createElement('div');
+                row.style.marginBottom = '40px';
+                
+                const roleEl = document.createElement('div');
+                roleEl.innerText = credit.role;
+                roleEl.style.fontSize = '0.8rem';
+                roleEl.style.color = '#1a8000'; // 暗めの緑
+                
+                const nameEl = document.createElement('div');
+                nameEl.innerText = credit.name;
+                nameEl.style.fontSize = '1.2rem';
+                nameEl.style.color = '#33ff00';
+                nameEl.style.textShadow = '0 0 5px #33ff00';
+
+                row.appendChild(roleEl);
+                row.appendChild(nameEl);
+                endContainer.appendChild(row);
+            });
+
+            // 3. タイトルへ戻るボタン
+            const backBtn = document.createElement('button');
+            backBtn.className = 'btn';
+            backBtn.innerText = "RETURN TO TITLE";
+            backBtn.style.marginTop = '60px';
+            backBtn.onclick = () => {
+                resetGame();
+                location.reload(); // 完全リセット
+            };
+            endContainer.appendChild(backBtn);
+
+            screen.appendChild(endContainer);
+            
+            // 自動スクロール演出（ゆっくり下へ）
+            setTimeout(() => {
+                endContainer.scrollIntoView({ behavior: 'smooth', block: 'end' });
+            }, 1000);
+        }
+
+        // --- 初期化 ---
+        async function initApp() {
+            await loadCasesJSON();
+            updateStartScreen();
+        }
+
+        initApp();
+    </script>
+</body>
+
+</html>

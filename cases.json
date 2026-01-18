@@ -1,0 +1,1602 @@
+[
+  {
+    "num": 1,
+    "intro_jp": "PLACE: SMALL JAZZ CLUB – MIDNIGHT\n\nブルースが流れている。\n黒いサックスの音。\n白い煙。\n\n世界は単純だ。\n根拠のない明るさと、根拠のある暗さ。\n\nだが、この店では違う。\n明るくも暗くもない。\n\n――ただ、生きる音がする。\n\nCブルース。\nシンプルな12小節。",
+    "intro_en": "PLACE: SMALL JAZZ CLUB – MIDNIGHT\n\nBlues is playing.\nBlack saxophone sound.\nWhite smoke.\n\nThe world is simple.\nBaseless brightness and justified darkness.\n\nBut not here.\nNeither bright nor dark.\n\n-- Just the sound of living.",
+    "problem_jp": "ブルースの現場。Cブルースで「Eb」の音が鳴っている。\n\nこの音は――理論的にはアボイドノート。\nだが、ブルースの心臓だ。\n\n音の正体は何だ？",
+    "problem_en": "A blues scene. The note 'Eb' in C blues.\n\nTheoretically, it's an avoid note.\nBut it's the heart of blues.\n\nWhat is this note?",
+    "choices": [
+      {
+        "label_jp": "♭3rd (ブルーノート)",
+        "label_en": "♭3rd (Blue Note)",
+        "result": "win"
+      },
+      {
+        "label_jp": "アボイドノート",
+        "label_en": "Avoid Note",
+        "result": "lose",
+        "msg_jp": "違う。\n\nこれはアボイドじゃない。\nクラシック理論を街に持ち込むな。\n\nブルースは、理論を壊すために生まれた。",
+        "msg_en": "No.\n\nThis isn't an avoid note.\nDon't bring classical theory to the streets.\n\nBlues was born to break theory."
+      },
+      {
+        "label_jp": "コードトーン",
+        "label_en": "Chord Tone",
+        "result": "lose",
+        "msg_jp": "違う。\n\nお前の耳は、テキストを読んでるだけだ。\nコードトーンの定義なんて、世界の片隅でしか通用しない。",
+        "msg_en": "No.\n\nYour ear is just reading textbooks.\nThe definition of chord tone only works in a corner of the world."
+      }
+    ],
+    "correct_msg_jp": "そうだ。\nこれがブルーノートだ。\n\n俺も若い頃、何年もかけてこの音の意味を理解した。\n理論じゃない。\n感覚だ。\n\nこの♭3rdがあるから、ブルースは泣ける。\nコード理論を超えた場所に、人間の根源がある。\n\n俺は、その場所に何度も立ち続けることにした。",
+    "correct_msg_en": "That's right.\nThis is the blue note.\n\nWhen I was young, it took me years to understand what this note meant.\nNot theory.\nFeeling.\n\nBecause of this ♭3rd, blues can cry.\nBeyond chord theory, there is the root of humanity.\n\nI decided to keep standing in that place, over and over again.",
+    "ending_jp": "不協和音が、時に最も美しい。\n\nこの街は、まだそれを知らない若い奴らが多い。",
+    "ending_en": "Dissonance is sometimes the most beautiful.\n\nThere are still many young people in this city who don't know that."
+  },
+  {
+    "num": 2,
+    "intro_jp": "PLACE: RECITAL HALL – AFTERNOON\n\n演奏会の現場だった。\n楽譜が燃えていた。\n\nピアニストが目をつぶっている。\n何かから、逃げているのかもしれない。\n\n楽譜に書かれたその指示は、\n《tacet》だった。\n\n沈黙。\n弾くなということだ。",
+    "intro_en": "PLACE: RECITAL HALL – AFTERNOON\n\nIt was a recital.\nThe score was burning.\n\nThe pianist's eyes were closed.\nMaybe he was running from something.\n\nThe instruction written on the score was,\n《tacet》.\n\nSilence.\nDon't play.",
+    "problem_jp": "楽譜に《tacet》と書かれている。\n\nこの音楽用語の意味は何だ？\nなぜ、沈黙が必要なのか？",
+    "problem_en": "The score says 《tacet》.\n\nWhat does this musical term mean?\nWhy is silence necessary?",
+    "choices": [
+      {
+        "label_jp": "休み(演奏しない)",
+        "label_en": "Rest (Don't play)",
+        "result": "win"
+      },
+      {
+        "label_jp": "強く弾く",
+        "label_en": "Play loud",
+        "result": "lose",
+        "msg_jp": "違う。\n\nお前は読めていない。\n指示を見ているだけで、音を聴いていない。",
+        "msg_en": "No.\n\nYou're not reading it.\nYou're just seeing the instruction, not hearing the sound."
+      },
+      {
+        "label_jp": "速く弾く",
+        "label_en": "Play fast",
+        "result": "lose",
+        "msg_jp": "違う。\n\n音楽に、常に音が必要だと思ってるのか？\nそれは、甘えだ。",
+        "msg_en": "No.\n\nDo you think music always needs sound?\nThat's weakness."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\ntacet。\n沈黙。\n\n多くの奴らは、この指示を無視する。\n自分の出番を失いたくないから。\n\nだが、音楽で最も大切な瞬間は、\nお前が音を出さない時だ。\n\nオーケストラの中で消える。\n それは、死ぬことじゃない。\n 他の奴らを輝かせることだ。\n\n俺は、その覚悟を決めた日を覚えている。",
+    "correct_msg_en": "That's right.\n\nTacet.\nSilence.\n\nMany people ignore this instruction.\nBecause they don't want to lose their moment.\n\nBut the most important moment in music is\nwhen you don't make sound.\n\nDisappear in the orchestra.\nThat's not dying.\nIt's making others shine.\n\nI remember the day I made that decision.",
+    "ending_jp": "俺はコートを立ち上がり、次の現場へ向かった。\n\n沈黙も、また音楽だ。",
+    "ending_en": "I stood up from my coat and headed to the next place.\n\nSilence too is music."
+  },
+  {
+    "num": 3,
+    "intro_jp": "PLACE: RECORDING STUDIO – LATE NIGHT\n\nメトロノームが狂っていた。\nしかし、ドラマーは気づいていない。\n\nテンポ：100。\n5分後：110。\n\n意識的か、無意識か。\n違う――感覚だ。\n\n演奏者の呼吸と、時間の関係。\n理論的には間違っている。\nだが、耳には正しく聞こえる。",
+    "intro_en": "PLACE: RECORDING STUDIO – LATE NIGHT\n\nThe metronome was broken.\nBut the drummer didn't notice.\n\nTempo: 100.\n5 minutes later: 110.\n\nConscious or unconscious.\nNo -- it's feeling.\n\nThe relationship between the performer's breath and time.\nTheoretically wrong.\nBut it sounds right to the ear.",
+    "problem_jp": "テンポが徐々に速くなっている。\nドラマーの心臓が、メトロノームを制御している。\n\nジャズでこれを何と呼ぶ？",
+    "problem_en": "The tempo is gradually getting faster.\nThe drummer's heart controls the metronome.\n\nWhat is this called in jazz?",
+    "choices": [
+      {
+        "label_jp": "ルバート",
+        "label_en": "Rubato",
+        "result": "win"
+      },
+      {
+        "label_jp": "リタルダンド",
+        "label_en": "Ritardando",
+        "result": "lose",
+        "msg_jp": "違う。\n\nリタルダンドは意図的な指示だ。\nこれは、意識と無意識の間にある音だ。",
+        "msg_en": "No.\n\nRitardando is an intentional instruction.\nThis is sound between consciousness and unconsciousness."
+      },
+      {
+        "label_jp": "アッチェレランド",
+        "label_en": "Accelerando",
+        "result": "lose",
+        "msg_jp": "違う。\n\nそれは楽譜に書かれるべき指示だ。\nしかし、ジャズは楽譜を超えている。",
+        "msg_en": "No.\n\nThat's an instruction that should be written in the score.\nBut jazz transcends the score."
+      }
+    ],
+    "correct_msg_jp": "そうだ。\nルバート。\n\n時間の融通。\n呼吸の融通。\n\n古典音楽では、指揮者が与える。\nジャズでは、プレイヤーが奪い取る。\n\n俺は何度も、このルバートで泣いた演奏を聴いた。\nメトロノームなど、死んだ時間だ。\n\n本物の音楽は、人間の鼓動と共に流れる。",
+    "correct_msg_en": "That's right.\nRubato.\n\nFluidity of time.\nFluidity of breath.\n\nIn classical music, the conductor gives it.\nIn jazz, players steal it.\n\nI've heard many performances cry with this rubato.\nA metronome is dead time.\n\nReal music flows with the human heartbeat.",
+    "ending_jp": "次のドラマーが、メトロノームを投げた。\n\n若い奴だ。\nだが、悪くない。",
+    "ending_en": "The next drummer threw the metronome.\n\nHe's young.\nBut not bad."
+  },
+  {
+    "num": 4,
+    "intro_jp": "PLACE: THEORY CLASS – MORNING\n\n黒板に「C」と書かれている。\n\n生徒たちは、教科書を開いている。\n「トニック」\n「主音」\n「キーの中心」\n\n定義ばかりで、音を聴いていない。\n\nこの街の音楽学校は、\n定義を音だと勘違いしている。",
+    "intro_en": "PLACE: THEORY CLASS – MORNING\n\n'C' is written on the blackboard.\n\nStudents are opening their textbooks.\n'Tonic'\n'Root note'\n'Center of the key'\n\nThey're only reading definitions, not listening to the sound.\n\nThe music schools in this city\nmistake definitions for sound.",
+    "problem_jp": "Cメジャーキーで最も重要な音「C」。\nこれを何と呼ぶ？",
+    "problem_en": "The most important note 'C' in C major.\nWhat is it called?",
+    "choices": [
+      {
+        "label_jp": "トニック(主音)",
+        "label_en": "Tonic",
+        "result": "win"
+      },
+      {
+        "label_jp": "ドミナント",
+        "label_en": "Dominant",
+        "result": "lose",
+        "msg_jp": "違う。\n\nドミナントは5度だ。\n緊張の中心。\n\nトニックは違う。\n安定の中心だ。",
+        "msg_en": "No.\n\nDominant is the 5th.\nCenter of tension.\n\nTonic is different.\nCenter of stability."
+      },
+      {
+        "label_jp": "サブドミナント",
+        "label_en": "Subdominant",
+        "result": "lose",
+        "msg_jp": "違う。\n\nサブドミナントは4度だ。\nトニックじゃない。",
+        "msg_en": "No.\n\nSubdominant is the 4th.\nNot the tonic."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\nトニック。\n主音。\n\nだが、定義は音じゃない。\n\n俺は、この音に何度も助けられた。\n帰る場所のない夜も、\nこのCの響きがあれば、\n帰ることができた。\n\nトニックは、理論じゃなく、\n心の帰宅駅だ。",
+    "correct_msg_en": "That's right.\nTonic.\nRoot note.\n\nBut the definition is not the sound.\n\nI've been saved by this note many times.\nOn nights without a place to return,\nif this C resonance was there,\nI could return.\n\nThe tonic is not theory,\nit's the heart's station home.",
+    "ending_jp": "黒板のチョークが、壊れた。\n\n生徒たちは、まだ定義を読み続けている。",
+    "ending_en": "The chalk on the blackboard broke.\n\nStudents are still reading definitions."
+  },
+  {
+    "num": 5,
+    "intro_jp": "PLACE: PIANIST'S APARTMENT – EVENING\n\nCmaj7の楽譜がある。\nピアニストは、手を止めている。\n\n「Fの音を使っていいのか？\nアボイドノートじゃないのか？」\n\n疑問は良いことだ。\nだが、答えはシンプルだ。\n\n楽譜には、その答えが書いていない。",
+    "intro_en": "PLACE: PIANIST'S APARTMENT – EVENING\n\nThere's a Cmaj7 score.\nThe pianist has stopped his hands.\n\n'Can I use the note F?\nIsn't it an avoid note?'\n\nQuestions are good.\nBut the answer is simple.\n\nThe score doesn't write the answer.",
+    "problem_jp": "Cmaj7で「F」の音は避けるべきか？\n\nこの曲では何が正解だ？",
+    "problem_en": "Should you avoid 'F' on Cmaj7?\n\nWhat is the right answer in this song?",
+    "choices": [
+      {
+        "label_jp": "はい(アボイドノート)",
+        "label_en": "Yes (Avoid Note)",
+        "result": "win"
+      },
+      {
+        "label_jp": "いいえ(使える)",
+        "label_en": "No (Usable)",
+        "result": "lose",
+        "msg_jp": "違う。\n\nCmaj7とFは、完全4度だ。\n理論的には濁る。",
+        "msg_en": "No.\n\nCmaj7 and F are a perfect 4th.\nTheoretically muddy."
+      },
+      {
+        "label_jp": "状況による",
+        "label_en": "Depends",
+        "result": "lose",
+        "msg_jp": "甘えるな。\n\n理論は、護るべき壁だ。\nそれを壊すのも、時には必要。\nだが、壊す前に理解せよ。",
+        "msg_en": "Don't be weak.\n\nTheory is a wall to protect.\nSometimes you need to break it.\nBut understand before you break it."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\nCmaj7でのFは、アボイドノート。\nこれは、揺るがない理論だ。\n\nだが――俺は、敢えてこの音を使う時がある。\nメロディラインが要求する時。\nプレイヤーの心が要求する時。\n\nそういう時は、Fを使う。\n違う響き方をする。\nアボイドが、表現になる。\n\n理論を知ることと、理論を破ることは、別の話だ。",
+    "correct_msg_en": "That's right.\n\nF on Cmaj7 is an avoid note.\nThis is unshakeable theory.\n\nBut -- I sometimes use this note intentionally.\nWhen the melody line demands it.\nWhen the player's heart demands it.\n\nWhen that happens, I use F.\nIt sounds different.\nThe avoid becomes expression.\n\nKnowing theory and breaking it are different things.",
+    "ending_jp": "ピアニストは、Fを弾いた。\n\n美しかった。",
+    "ending_en": "The pianist played F.\n\nIt was beautiful."
+  },
+  {
+    "num": 6,
+    "intro_jp": "PLACE: SMALL JAZZ CLUB – MIDNIGHT\n\n甘い匂いがした。\n酒じゃない。女でもない。\n音だ。\n\nこの街には、甘すぎる音が流れる夜がある。\n耳に優しく、心地よくて、\n――だからこそ、人をダメにする。\n\n若い連中は言う。\n「きれいですね」\n「おしゃれですね」\n\n俺は知っている。\nその9thは、必要以上に人を酔わせる。\n\n音楽も人生も、\n甘さを足しすぎると、\n引き返せなくなる。",
+    "intro_en": "PLACE: SMALL JAZZ CLUB – MIDNIGHT\n\nThere was a sweet smell.\nNot alcohol. Not a woman.\nSound.\n\nThere are nights in this city when too sweet a sound flows.\nGentl to the ear, comfortable,\n-- and that's why it ruins people.\n\nThe young folks say,\n'It's beautiful.'\n'It's stylish.'\n\nI know better.\nThat 9th intoxicates people more than necessary.\n\nIn music and in life,\nif you add too much sweetness,\nyou can't turn back.",
+    "problem_jp": "ピアノの上に、走り書きのコードが残されていた。\n\nC△9\n構成音：\nC – E – G – B – D\n\n悪くない。\n理論的には、完璧だ。\n\nだが、この夜の演奏は「甘すぎた」。\n俺は鍵盤を見つめながら考える。\n\nQ. このコードの「本当の問題」は何だ？",
+    "problem_en": "A scrawled chord was left on the piano.\n\nC△9\nNotes:\nC – E – G – B – D\n\nNot bad.\nTheoretically, perfect.\n\nBut the performance tonight was 'too sweet'.\nI stare at the keys and think.\n\nQ. What is the 'real problem' with this chord?",
+    "choices": [
+      {
+        "label_jp": "9thはジャズでは使わない音だから",
+        "label_en": "Because 9th is not used in jazz",
+        "result": "lose",
+        "msg_jp": "違う。\n9thは、罪じゃない。\n\n俺も若い頃は\n9thに救われた夜があった。\n\n問題は――\n使い方だ。",
+        "msg_en": "No.\n9th is not a sin.\n\nWhen I was young,\nthere was a night saved by 9th.\n\nThe problem is --\nhow you use it."
+      },
+      {
+        "label_jp": "コードトーンが多すぎて濁っているから",
+        "label_en": "Because there are too many chord tones",
+        "result": "lose",
+        "msg_jp": "それも違う。\n音が多いこと自体は、問題じゃない。\n\n人生だってそうだ。\n問題は「多さ」じゃない。\n向きだ。",
+        "msg_en": "That's wrong too.\nHaving too many notes is not the problem.\n\nLife is the same.\nThe problem is not 'quantity'.\nIt's 'direction'."
+      },
+      {
+        "label_jp": "解決すべき緊張感を失わせているから",
+        "label_en": "Because it loses the tension to be resolved",
+        "result": "win"
+      }
+    ],
+    "correct_msg_jp": "そうだ。\nこの9thは――\n解決を拒否している。\n\n本来、\nテンションは緊張を生み、\n次へ進むためにある。\n\nだがこの9thは、\nそこに居座る。\n\n居心地がいい。\nだから危険だ。\n\n正解だ。\n\n俺は昔、\nこの手の音ばかり追いかけていた。\n\n聴き心地がよくて、\n拍手がもらえて、\n「うまいですね」って言われる音。\n\nでも――\n人生は進まなかった。\n\n緊張を解かない音は、\n人をその場に縛りつける。\n\n前に進むには、\n一度、気持ち悪い思いをしなきゃならない。\n\n音楽も、人生も、同じだ。",
+    "correct_msg_en": "That's right.\nThis 9th --\nrefuses to resolve.\n\nOriginally,\ntension creates tension,\nand exists to move forward.\n\nBut this 9th\nsits there.\n\nIt's comfortable.\nThat's why it's dangerous.\n\nCorrect.\n\nLong ago,\nI chased only this kind of sound.\n\nSounds that feel good to listen to,\nthat get applause,\nthat are called 'well played'.\n\nBut --\nlife didn't move forward.\n\nSounds that don't resolve tension\nbind people to that place.\n\nTo move forward,\nyou have to feel sick once.\n\nMusic and life are the same.",
+    "ending_jp": "この街には、\nまだ甘すぎる音が多すぎる。\n\nそして――\nそれを「正しい」と教える連中がいる。\n\n俺はコートの襟を立て、\n次の現場へ向かった。",
+    "ending_en": "In this city,\nthere's still too much too sweet sound.\n\nAnd --\nthere are people who teach it as 'correct'.\n\nI stood up my coat collar\nand headed to the next place."
+  },
+  {
+    "num": 7,
+    "intro_jp": "PLACE: ABANDONED STUDIO - RAINY NIGHT\n\n雨が窓を叩いている。\nまるで、入り込みたがっているようだ。\n\n不協和音(ディソナンス)。\n\n俺はずっと、それが「悪」だと思っていた。\n調和こそが正義だと。\n\nだが、この現場に残された11thの音は、\n怒っていた。\n\n解決しないことへの怒りじゃない。\n「解決を強制されること」への怒りだ。",
+    "intro_en": "PLACE: ABANDONED STUDIO - RAINY NIGHT\n\nRain beats against the window.\nLike it wants to get in.\n\nDissonance.\n\nI always thought it was 'evil'.\nThat harmony was justice.\n\nBut the 11th note left at this scene\nwas angry.\n\nNot anger at not resolving.\nAnger at 'being forced to resolve'.",
+    "problem_jp": "メジャー・コード上で鳴らされた「11th(F音)」。\nこれは強烈な不協和を生む。\n\n教科書はこの音を「アボイド(避けるべし)」と言う。\n\nだが、この音が必要な瞬間がある。\nそれはどんな時だ？",
+    "problem_en": "An '11th (F note)' played over a major chord.\nThis creates intense dissonance.\n\nTextbooks call this note 'Avoid'.\n\nBut there are moments when this note is necessary.\nWhen is that?",
+    "choices": [
+      {
+        "label_jp": "聴衆を不快にさせたい時",
+        "label_en": "To discomfort the audience",
+        "result": "lose",
+        "msg_jp": "違う。\nサディズムは音楽じゃない。\nそれはただの暴力だ。",
+        "msg_en": "No.\nSadism is not music.\nThat's just violence."
+      },
+      {
+        "label_jp": "解決への渇望を極限まで高める時",
+        "label_en": "To maximize the thirst for resolution",
+        "result": "win"
+      },
+      {
+        "label_jp": "ミスをごまかす時",
+        "label_en": "To hide a mistake",
+        "result": "lose",
+        "msg_jp": "ふざけるな。\n逃げに使う不協和音ほど、\n情けないものはない。",
+        "msg_en": "Don't kid me.\nThere is nothing more pathetic\nthan dissonance used for escape."
+      }
+    ],
+    "correct_msg_jp": "そうだ。\n\n安易な解決は、人を堕落させる。\n\n「大丈夫だよ」\n「なんとかなるよ」\n\nそんな甘い言葉(ハーモニー)が、どれだけ人を殺してきた？\n\n11thの濁りは、現実そのものだ。\n矛盾。\n葛藤。\nやりきれなさ。\n\nそれを音にする。\nその「濁り」を直視した奴だけが、\n次の「解決」の本当の美しさを知る。\n\n俺はもう、綺麗なだけの嘘には飽き飽きだ。",
+    "correct_msg_en": "That's right.\n\nEasy resolution corrupts people.\n\n'It's okay.'\n'It'll work out.'\n\nHow many people have those sweet words (harmonies) killed?\n\nThe muddiness of the 11th is reality itself.\nContradiction.\nConflict.\nUnbearableness.\n\nTurn that into sound.\nOnly those who face that 'muddiness' directly\nknow the true beauty of the next 'resolution'.\n\nI'm fed up with lies that are just pretty.",
+    "ending_jp": "俺はピアノのFを叩きつけた。\n\nその濁った音は、雨音よりも激しく、\n俺の胸の奥を震わせた。",
+    "ending_en": "I slammed the F on the piano.\n\nThat muddy sound vibrated deep in my chest,\nmore violent than the sound of the rain."
+  },
+  {
+    "num": 8,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n消された13th...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nThe Erased 13th...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 9,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n解決しないドミナント...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nThe Unresolved Dominant...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 10,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n音が多すぎる夜...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nThe Night of Too Many Notes...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 11,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n裏切りのトライトーン...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nThe Betrayal of the Tritone...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 12,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n偽りのツーファイブ...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nThe False Two-Five...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 13,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n二つ目の解決...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nThe Second Resolution...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 14,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n正しい嘘...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nThe Righteous Lie...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 15,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n裏口から入る男...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nThe Man from the Backdoor...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 16,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n走るドラマー...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nThe Rushing Drummer...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 17,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n重すぎるワン...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nThe Too-Heavy One...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 18,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n消えたツーとフォー...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nThe Vanished Two and Four...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 19,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n休符の中の叫び...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nThe Scream Inside the Rest...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 20,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nテンポのない人生...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nLife Without Tempo...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 21,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nメジャーに閉じ込められた男...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nTrapped in Major...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 22,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nドリアンの誘惑...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nDorian's Temptation...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 23,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nフリジアンの影...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nShadow of Phrygian...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 24,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nリディアンは眩しすぎる...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nLydian is Too Bright...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 25,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nモードに殺される...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nKilled by Modes...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 26,
+    "intro_jp": "PLACE: DUSTY ARCHIVE ROOM\n\nテープが回っている。\n録音日は、10年前。\n\n流れてくるサックスの音は、完璧だ。\nフレーズ、タイミング、音色。\nどこにも隙がない。\n\n演奏しているのは、俺の旧友だ。\n\n……いや、正確には「死体」だ。\n彼はまだ生きている。\nだが、音楽家としては死んでいる。\n\n彼はこの10年、\n毎晩、このテープと全く同じソロを弾き続けている。",
+    "intro_en": "PLACE: DUSTY ARCHIVE ROOM\n\nThe tape is running.\nRecorded 10 years ago.\n\nThe saxophone sound flowing out is perfect.\nPhrasing, timing, tone.\nNot a single gap.\n\nThe player is an old friend of mine.\n\n...No, to be precise, a 'corpse'.\nHe is still alive.\nBut as a musician, he is dead.\n\nFor the last 10 years,\nevery night, he has continued to play exactly the same solo as this tape.",
+    "problem_jp": "なぜ彼は「死体」なのか？\n\n完璧な演奏を再現すること。\nそれは「維持」ではない。\nジャズにおいて、それは「〇〇」を意味する。\n\n〇〇に入る言葉は？",
+    "problem_en": "Why is he a 'corpse'?\n\nReproducing a perfect performance.\nThat is not 'maintenance'.\nIn jazz, that means 'XX'.\n\nWhat word goes in XX?",
+    "choices": [
+      {
+        "label_jp": "熟練 (Mastery)",
+        "label_en": "Mastery",
+        "result": "lose",
+        "msg_jp": "違う。\n熟練とは、変化し続けることだ。\n同じ場所に留まることじゃない。",
+        "msg_en": "No.\nMastery is to keep changing.\nNot staying in the same place."
+      },
+      {
+        "label_jp": "退化 (Degeneration)",
+        "label_en": "Degeneration",
+        "result": "win"
+      },
+      {
+        "label_jp": "伝統 (Tradition)",
+        "label_en": "Tradition",
+        "result": "lose",
+        "msg_jp": "伝統を言い訳にするな。\n伝統を守る奴こそ、\n最も革新的だったはずだ。",
+        "msg_en": "Don't use tradition as an excuse.\nThose who protected tradition\nwere supposed to be the most innovative."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n退化。\nあるいは、思考停止。\n\n過去の栄光は、強烈な麻薬だ。\n「あの時は凄かった」\n「このフレーズはウケた」\n\nその記憶が、指を縛る。\n\n昨日と同じソロを弾いた瞬間、\nその音はジャズではなく、\nただの「再生」になる。\n\n上達とは、積み上げることじゃない。\n過去の自分を、殺し続けることだ。\n\n忘れる勇気のない奴に、\n明日の音は弾けない。",
+    "correct_msg_en": "Correct.\nDegeneration.\nOr, cessation of thought.\n\nPast glory is a potent drug.\n'I was amazing back then.'\n'This phrase was a hit.'\n\nThose memories bind the fingers.\n\nThe moment you play the same solo as yesterday,\nthat sound is no longer jazz,\nbut merely 'playback'.\n\nImprovement is not about piling up.\nIt is about continuing to kill your past self.\n\nThose without the courage to forget\ncannot play tomorrow's sound.",
+    "ending_jp": "俺はテープを止めた。\n静寂が戻る。\n\n「今の俺の音」を探しに行かなければならない。\nたとえそれが、昨日の俺より下手だとしても。",
+    "ending_en": "I stopped the tape.\nSilence returned.\n\nI must go find 'my sound right now'.\nEven if it's worse than I was yesterday."
+  },
+  {
+    "num": 27,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n指が勝手に動く...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nFingers Move on Their Own...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 28,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n昔の俺は上手かった...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nI Used to be Good...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 29,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n忘れられない一音...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nThe Unforgettable Note...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 30,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n再生ボタンは押すな...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nDon't Press Play...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 31,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n正しすぎる講師...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nThe Too-Correct Teacher...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 32,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n教科書通りの殺人...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nTextbook Murder...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 33,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n誰も疑問を持たない...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nNo One Questions...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 34,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n音楽学校の地下...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nBasement of the Music School...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 35,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n教える者の罪...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nThe Sin of the Teacher...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 36,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nわざと外した音...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nThe Intentionally Missed Note...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 37,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n上手すぎる演奏...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nPlaying Too Well...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 38,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nミスが一番美しい夜...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nThe Night the Mistake was Beautiful...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 39,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n完璧を壊せ...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nBreak the Perfection...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 40,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n音楽は競技じゃない...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nMusic is Not a Sport...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 41,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n弾かないという選択...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nThe Choice Not to Play...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 42,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n音を捨てた男...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nThe Man Who Abandoned Sound...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 43,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n何も鳴らさない夜...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nThe Silent Night...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 44,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n最後の依頼...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nThe Final Request...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 45,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nケースを閉じる日...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nThe Day to Close the Case...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 46,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nもう一度だけ...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nJust One More Time...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 47,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n正解じゃない音...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nThe Incorrect Note...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 48,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n失敗してもいい...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nIt's Okay to Fail...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 49,
+    "intro_jp": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\n俺の音...\n\n街の隙間に、その謎は隠れていた。\n誰もが見過ごすような、些細な違和感。\n\nだが、俺の耳は誤魔化せない。",
+    "intro_en": "PLACE: SOMEWHERE IN THE CITY - NIGHT\n\nMy Sound...\n\nThe mystery was hidden in the cracks of the city.\nA subtle dissonance that everyone overlooked.\n\nBut my ears cannot be fooled.",
+    "problem_jp": "現場に残された音。\nそれは理論的には説明のつかないものだった。\n\nQ. 次のうち、ジャズマンが選ぶべき道は？",
+    "problem_en": "The sound left at the scene.\nIt was something theoretically inexplicable.\n\nQ. Which path should a jazzman choose?",
+    "choices": [
+      {
+        "label_jp": "理論書に従う",
+        "label_en": "Follow the Theory Book",
+        "result": "lose",
+        "msg_jp": "違う。本に答えはない。",
+        "msg_en": "No. The answer is not in the book."
+      },
+      {
+        "label_jp": "自分の耳を信じる",
+        "label_en": "Trust Your Ears",
+        "result": "win"
+      },
+      {
+        "label_jp": "流行に乗る",
+        "label_en": "Follow the Trend",
+        "result": "lose",
+        "msg_jp": "違う。それは消費されるだけだ。",
+        "msg_en": "No. That is just being consumed."
+      }
+    ],
+    "correct_msg_jp": "正解だ。\n\n俺たちは、いつだって自分の感覚だけを頼りに生きている。\n保証なんてない。\nあるのは、今鳴っている音だけだ。",
+    "correct_msg_en": "Correct.\n\nWe always live relying only on our own senses.\nThere are no guarantees.\nOnly the sound playing right now.",
+    "ending_jp": "俺はタバコの煙を吐き出し、次の事件へ向かった。",
+    "ending_en": "I exhaled cigarette smoke and headed to the next case."
+  },
+  {
+    "num": 50,
+    "intro_jp": "PLACE: THE ROOFTOP - DAWN\n\n事件は終わらない。\n50の謎を解いても、\n街からはノイズが消えない。\n\n不協和音。\n解決しない問い。\n理不尽な展開。\n\nそれが人生だ。\n\n俺達は、完全なカデンツ(終止形)を探して旅をしている。\nだが、そんなものはどこにもないのかもしれない。\n\nなら、どうする？\n楽器を置くか？\n耳を塞ぐか？",
+    "intro_en": "PLACE: THE ROOFTOP - DAWN\n\nThe case never ends.\nEven after solving 50 mysteries,\nthe noise doesn't disappear from the city.\n\nDissonance.\nUnresolved questions.\nUnreasonable developments.\n\nThat is life.\n\nWe travel looking for the perfect cadence.\nBut maybe such a thing doesn't exist anywhere.\n\nSo, what do you do?\nPut down the instrument?\nCover your ears?",
+    "problem_jp": "最後の問いだ。\n\n不完全で、残酷で、\n解決しないこの世界で。\n\nそれでもお前は、音を鳴らすか？",
+    "problem_en": "Final question.\n\nIn this incomplete, cruel,\nunresolved world.\n\nWill you still play the sound?",
+    "choices": [
+      {
+        "label_jp": "沈黙を選ぶ",
+        "label_en": "Choose Silence",
+        "result": "lose",
+        "msg_jp": "それも一つの見識だ。\nだが、お前の物語はそこで終わる。\n俺はまだ、終わりたくない。",
+        "msg_en": "That's one perspective.\nBut your story ends there.\nI don't want to end yet."
+      },
+      {
+        "label_jp": "それでも鳴らす",
+        "label_en": "Play It Anyway",
+        "result": "win"
+      },
+      {
+        "label_jp": "完璧な世界を探す",
+        "label_en": "Search for a perfect world",
+        "result": "lose",
+        "msg_jp": "行け。\nだが、そこには音楽はない。\n天国は、退屈な場所らしいからな。",
+        "msg_en": "Go.\nBut there is no music there.\nHeaven is supposedly a boring place."
+      }
+    ],
+    "correct_msg_jp": "ああ、そうだ。\n鳴らすんだ。\n\n声が枯れても。\n指が動かなくなっても。\n世界中が「お前は間違っている」と叫んでも。\n\n俺の音は、俺にしか鳴らせない。\n\n不協和音？\n上等だ。\nそれが「生きている」という音だ。\n\n美しい和音だけでできた人生なんて、\nクソ食らえだ。\n\n俺たちは傷だらけで、\n泥だらけで、\nそれでも、次のワン・コーラスを求めて息を吸う。",
+    "correct_msg_en": "Yeah, that's right.\nPlay it.\n\nEven if your voice goes hoarse.\nEven if your fingers stop moving.\nEven if the whole world screams 'You are wrong'.\n\nOnly I can play my sound.\n\nDissonance?\nBring it on.\nThat is the sound of 'living'.\n\nA life made only of beautiful chords\ncan eat shit.\n\nWe are scarred,\nmuddy,\nand yet, we take a breath for the next chorus.",
+    "ending_jp": "夜明けが来る。\n街が動き出す。\n\n俺はサックスケースを担ぎ直した。\n\n「さて、行こうか」\n\n新しい不協和音が、俺を待っている。",
+    "ending_en": "Dawn comes.\nThe city starts moving.\n\nI readjusted my sax case.\n\n'Well, shall we go?'\n\nA new dissonance is waiting for me."
+  }
+]
