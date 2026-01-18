@@ -12,7 +12,6 @@
 
     <link rel="icon" href="/ogp.png" type="image/png">
     <link rel="apple-touch-icon" href="/ogp.png">
-
     <meta property="og:title" content="DETECTIVE OF DISSONANCE - 不協和音の探偵">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://detective-of-dissonance.vercel.app/">
@@ -20,7 +19,6 @@
     <meta property="og:description" content="「お前の音は、俺にしか鳴らせない。」ジャズの哲学を問う、全50ステージのハードボイルド・ノベルクイズ。">
     <meta property="og:site_name" content="DETECTIVE OF DISSONANCE">
     <meta property="og:locale" content="ja_JP">
-
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="DETECTIVE OF DISSONANCE - 不協和音の探偵">
     <meta name="twitter:description" content="「お前の音は、俺にしか鳴らせない。」ジャズの哲学を問う、全50ステージのハードボイルド・ノベルクイズ。">
@@ -31,8 +29,8 @@
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
     
-    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&display=swap" rel="stylesheet">
+    
     <style>
         :root {
             --bg-color: #050505;
@@ -136,9 +134,7 @@
         }
 
         @keyframes blink {
-            50% {
-                opacity: 0;
-            }
+            50% { opacity: 0; }
         }
 
         #visual-area {
@@ -172,18 +168,9 @@
             scrollbar-color: var(--main-color) var(--bg-color);
         }
 
-        #message-box::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        #message-box::-webkit-scrollbar-track {
-            background: var(--bg-color);
-        }
-
-        #message-box::-webkit-scrollbar-thumb {
-            background-color: var(--main-color);
-            border: 2px solid var(--bg-color);
-        }
+        #message-box::-webkit-scrollbar { width: 8px; }
+        #message-box::-webkit-scrollbar-track { background: var(--bg-color); }
+        #message-box::-webkit-scrollbar-thumb { background-color: var(--main-color); border: 2px solid var(--bg-color); }
 
         #command-box {
             flex: 1;
@@ -205,15 +192,16 @@
             text-align: left;
             transition: all 0.3s;
         }
+        .btn:hover { background-color: var(--main-color); color: var(--bg-color); }
+        .btn-disabled { opacity: 0.5; cursor: not-allowed; }
 
-        .btn:hover {
-            background-color: var(--main-color);
-            color: var(--bg-color);
+        .glitch-effect {
+            animation: glitch 1s infinite alternate;
+            background-color: #001100;
         }
-
-        .btn-disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
+        @keyframes glitch {
+            0% { text-shadow: 2px 0 var(--alert-color); }
+            100% { text-shadow: -2px 0 var(--case-title-color); }
         }
 
         #status-bar {
@@ -231,124 +219,52 @@
             border-bottom: 1px solid var(--case-title-color);
         }
 
-        .shake {
-            animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) both;
-        }
-
+        .shake { animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) both; }
         @keyframes shake {
-
-            10%,
-            90% {
-                transform: translate3d(-1px, 0, 0);
-            }
-
-            20%,
-            80% {
-                transform: translate3d(2px, 0, 0);
-            }
-
-            30%,
-            50%,
-            70% {
-                transform: translate3d(-4px, 0, 0);
-            }
-
-            40%,
-            60% {
-                transform: translate3d(4px, 0, 0);
-            }
+            10%, 90% { transform: translate3d(-1px, 0, 0); }
+            20%, 80% { transform: translate3d(2px, 0, 0); }
+            30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+            40%, 60% { transform: translate3d(4px, 0, 0); }
         }
 
-        /* モーダルの中身（枠）のデザイン */
-#result-box {
-    background-color: #000;
-    border: 2px solid var(--main-color);
-    padding: 15px;
+        #result-box {
+            background-color: #000;
+            border: 2px solid var(--main-color);
+            padding: 15px;
+            width: 85%;
+            max-width: 320px;
+            max-height: 80vh; 
+            overflow-y: auto; 
+            box-shadow: 0 0 10px var(--dim-color);
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        #rs-title {
+            text-align: center;
+            margin: 0;
+            font-size: 18px;
+            border-bottom: 1px solid var(--dim-color);
+            padding-bottom: 5px;
+        }
+        #rs-content { font-size: 14px; line-height: 1.5; white-space: pre-wrap; }
+        #rs-footer { text-align: center; margin-top: 5px; }
 
-    /* --- サイズ調整（スマホ対応） --- */
-    /* 幅：スマホでは画面の85%を使って広くし、PCでは320pxで止める */
-    width: 85%;
-    max-width: 320px;
-
-    /* 高さ：画面の80%以上にはならないように制限 */
-    max-height: 80vh; 
-    
-    /* 中身があふれたらスクロールバーを出す */
-    overflow-y: auto; 
-    /* ------------------------------ */
-
-    box-shadow: 0 0 10px var(--dim-color);
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-#rs-title {
-    text-align: center;
-    margin: 0;
-    
-    /* タイトル文字サイズ縮小 */
-    font-size: 18px;       /* 24px → 18px */
-    
-    border-bottom: 1px solid var(--dim-color);
-    padding-bottom: 5px;
-}
-
-#rs-content {
-    /* 本文文字サイズ縮小 */
-    font-size: 14px;       /* 18px → 14px */
-    
-    line-height: 1.5;
-    white-space: pre-wrap;
-}
-
-#rs-footer {
-    text-align: center;
-    margin-top: 5px;
-}
-
-/* --- スマホ用レスポンシブ対応 --- */
-@media (max-width: 768px) {
-    /* コンテナ全体：高さを画面に合わせて調整 */
-    #game-container {
-        width: 95%;
-        height: 90vh; /* 画面の高さの90%を使う */
-        padding: 5px;
-    }
-
-    /* アスキーアートエリア：少し小さくする */
-    #visual-area {
-        flex: 0 0 120px; /* 高さを120pxに固定 */
-        font-size: 10px; /* アートが崩れないように文字サイズ調整 */
-    }
-
-    /* コントロールエリア：横並び(row)から縦並び(column)へ変更 */
-    #control-area {
-        flex-direction: column;
-    }
-
-    /* メッセージボックス（文章エリア） */
-    #message-box {
-        border-right: none; /* 右の線を消す */
-        border-bottom: 2px solid var(--main-color); /* 下に線を引く */
-        flex: 1; /* 余ったスペースを全部使う */
-        font-size: 14px; /* 少し文字を小さくして読みやすく */
-    }
-
-    /* コマンドボックス（ボタンエリア） */
-    #command-box {
-        flex: 0 0 180px; /* 高さを180px確保 */
-        padding: 5px;
-        gap: 5px;
-    }
-
-    /* ボタンの微調整 */
-    .btn {
-        padding: 8px;
-        font-size: 14px;
-    }
-}
+        @media (max-width: 768px) {
+            #game-container { width: 95%; height: 90vh; padding: 5px; }
+            #visual-area { flex: 0 0 120px; font-size: 10px; }
+            #control-area { flex-direction: column; }
+            #message-box { border-right: none; border-bottom: 2px solid var(--main-color); flex: 1; font-size: 14px; }
+            #command-box { flex: 0 0 180px; padding: 5px; gap: 5px; }
+            .btn { padding: 8px; font-size: 14px; }
+        }
+        
+        /* エンドロール用アニメーション */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
     </style>
 </head>
 
@@ -368,15 +284,15 @@
     </div>
 
     <div id="opening-screen" class="overlay-screen" style="display: none; background-color: #000; z-index: 25;">
-    <div style="width: 80%; max-width: 600px; text-align: left;">
-        <div id="op-text" style="font-size: 18px; line-height: 2.0; min-height: 200px; white-space: pre-wrap;"></div>
-        <div id="op-footer" style="text-align: right; margin-top: 30px; opacity: 0; transition: opacity 1s;">
-            <button class="btn" onclick="endOpening()">START INVESTIGATION >></button>
+        <div style="width: 80%; max-width: 600px; text-align: left;">
+            <div id="op-text" style="font-size: 18px; line-height: 2.0; min-height: 200px; white-space: pre-wrap;"></div>
+            <div id="op-footer" style="text-align: right; margin-top: 30px; opacity: 0; transition: opacity 1s;">
+                <button class="btn" onclick="endOpening()">START INVESTIGATION >></button>
+            </div>
         </div>
     </div>
-</div>
 
-    <div id="case-title-screen" class="overlay-screen" onclick="startCaseScene()">
+    <div id="case-title-screen" class="overlay-screen" style="display: none;" onclick="startCaseScene()">
         <h3 id="ct-chapter" class="chapter-title">Chapter X</h3>
         <h1 id="ct-num" style="display:inline-block; padding-bottom:10px;">Case X</h1>
         <h2 id="ct-name">事件名</h2>
@@ -386,13 +302,13 @@
     </div>
 
     <div id="result-screen" class="overlay-screen" style="display: none;">
-    <div id="result-box">
-        <h2 id="rs-title" class="blink">RESULT</h2>
-        <div id="rs-content"></div>
-        <br>
-        <div id="rs-footer"></div>
+        <div id="result-box">
+            <h2 id="rs-title" class="blink">RESULT</h2>
+            <div id="rs-content"></div>
+            <br>
+            <div id="rs-footer"></div>
+        </div>
     </div>
-</div>
 
     <div id="game-container">
         <div id="status-bar">
@@ -434,7 +350,7 @@
             { id: 10, title_jp: "第10章：鳴らすべき一音", title_en: "Chapter 10: The Note That Must Be Played", theme: "The Reckoning" }
         ];
 
-        // --- ケースメタデータ（intro/problem/correct_msg/endingはJSONから） ---
+        // --- ケースメタデータ ---
         const CASES_META = [
             { num: 1, jp: "濁ったブルーノート", en: "The Dirty Blue Note", quote_jp: "音は狂い始めているが、まだ街はそれに気づいていない", quote_en: "The sound is starting to go mad, but the city hasn't noticed yet." },
             { num: 2, jp: "五線譜に書かれた遺書", en: "The Will on the Staff", quote_jp: "沈黙もまた、ひとつの音だ", quote_en: "Silence is also a note." },
@@ -489,8 +405,8 @@
         ];
 
         // --- オープニングテキスト ---
-const OPENING_TEXT = {
-    jp: `西暦2026年。
+        const OPENING_TEXT = {
+            jp: `西暦2026年。
 音楽はAIによって管理され、
 完璧な「協和音」だけが許される世界。
 
@@ -502,8 +418,8 @@ const OPENING_TEXT = {
 
 俺は、それらを救うためにここにいる。
 不協和音（ディソナンス）の探偵として。`,
-    
-    en: `The year is 2026.
+            
+            en: `The year is 2026.
 Music is controlled by AI,
 and only perfect "consonance" is allowed.
 
@@ -515,15 +431,14 @@ Notes with no place to belong.
 
 I am here to save them.
 As a detective of dissonance.`
-};
+        };
 
         // --- グローバル変数 ---
         let casesFromJSON = [];
         let casesLoaded = false;
 
-        // --- JSONロード関数 (JSファイル変え) ---
+        // --- JSONロード関数 ---
         async function loadCasesJSON() {
-            // 文字化け回避のため、JSONファイルではなくJSファイルからデータを読み込みます
             if (window.CASES_DATA) {
                 casesFromJSON = window.CASES_DATA;
                 casesLoaded = true;
@@ -647,7 +562,7 @@ As a detective of dissonance.`
         let currentCaseIndex = 0;
         let hp = 5;
         let isTyping = false;
-        let typingTimer = null; // ★これを追加（タイマーID管理用）
+        let typingTimer = null; 
 
         // --- LocalStorage ---
         function saveProgress() {
@@ -677,26 +592,19 @@ As a detective of dissonance.`
 
         // --- UI ---
         function toggleLang() {
-    // 1. 言語変数を切り替え
-    lang = lang === 'jp' ? 'en' : 'jp';
-    document.getElementById('lang-switch').innerText = lang === 'jp' ? 'JP / EN' : 'EN / JP';
-    
-    // 2. スタート画面のボタン更新（続きから 等）
-    updateStartScreen();
+            lang = lang === 'jp' ? 'en' : 'jp';
+            document.getElementById('lang-switch').innerText = lang === 'jp' ? 'JP / EN' : 'EN / JP';
+            updateStartScreen();
 
-    // 3. ★ここを追加：現在表示中の画面を強制的に再描画する
-    const titleScreen = document.getElementById('case-title-screen');
-    const gameContainer = document.getElementById('game-container');
+            const titleScreen = document.getElementById('case-title-screen');
+            const gameContainer = document.getElementById('game-container');
 
-    // 事件タイトル画面（Case X...）が表示されている場合
-    if (titleScreen.style.display === 'flex') {
-        showCaseTitle();
-    }
-    // ゲーム本編（本文）が表示されている場合
-    else if (gameContainer.style.display === 'flex') {
-        renderScene(); // これを呼ぶことで、新しい言語でタイピング演出が再スタートします
-    }
-}
+            if (titleScreen.style.display === 'flex') {
+                showCaseTitle();
+            } else if (gameContainer.style.display === 'flex') {
+                renderScene();
+            }
+        }
 
         function updateStartScreen() {
             const hasSave = localStorage.getItem('dissonance_case') !== null;
@@ -704,7 +612,7 @@ As a detective of dissonance.`
             document.getElementById('continue-btn').innerText = lang === 'jp' ? "続きから" : "CONTINUE";
         }
 
-        // --- ゲーム開始 ---
+        // --- ゲーム開始（修正版） ---
         async function startGame(isNew) {
             initAudio();
 
@@ -712,72 +620,62 @@ As a detective of dissonance.`
                 currentCaseIndex = 0;
                 hp = 5;
                 saveProgress();
-
                 document.getElementById('start-screen').style.display = 'none';
-        playOpening(); // ★ここを変更：いきなりタイトルへ行かずオープニングへ
+                playOpening(); 
             } else {
                 if (!loadProgress()) return;
                 document.getElementById('start-screen').style.display = 'none';
-        showCaseTitle();
+                showCaseTitle();
             }
-
-            document.getElementById('start-screen').style.display = 'none';
-            showCaseTitle();
+            // ★以前ここにあった不要な行を削除しました
         }
 
         function playOpening() {
-    const screen = document.getElementById('opening-screen');
-    const textBox = document.getElementById('op-text');
-    const footer = document.getElementById('op-footer');
-    
-    screen.style.display = 'flex';
-    textBox.innerHTML = "";
-    footer.style.opacity = "0"; // ボタンを隠しておく
+            const screen = document.getElementById('opening-screen');
+            const textBox = document.getElementById('op-text');
+            const footer = document.getElementById('op-footer');
+            
+            screen.style.display = 'flex';
+            textBox.innerHTML = "";
+            footer.style.opacity = "0"; 
 
-    const text = lang === 'jp' ? OPENING_TEXT.jp : OPENING_TEXT.en;
-    let i = 0;
+            const text = lang === 'jp' ? OPENING_TEXT.jp : OPENING_TEXT.en;
+            let i = 0;
 
-    // 既存のタイピングがあれば止める
-    if (typingTimer) clearTimeout(typingTimer);
-    isTyping = true;
-
-    function typeOp() {
-        if (i < text.length) {
-            const char = text.charAt(i);
-            textBox.innerHTML += char === '\n' ? '<br>' : char;
-            if (char !== ' ' && char !== '\n') playBeep('type');
-            i++;
-            // 少しゆっくりめに表示
-            typingTimer = setTimeout(typeOp, 60); 
-        } else {
-            isTyping = false;
-            typingTimer = null;
-            // 完了したらボタンをふわっと表示
-            footer.style.opacity = "1";
-        }
-    }
-    typeOp();
-    
-    // 画面クリックでスキップできるようにする
-    screen.onclick = () => {
-        if (isTyping) {
             if (typingTimer) clearTimeout(typingTimer);
-            isTyping = false;
-            typingTimer = null;
-            textBox.innerHTML = text.replace(/\n/g, '<br>'); // 全文表示
-            footer.style.opacity = "1";
-        }
-    };
-}
+            isTyping = true;
 
-// --- オープニング終了（新規追加） ---
-function endOpening() {
-    // ボタンのクリックイベント伝播で再スキップが走らないようにする
-    event.stopPropagation();
-    
-    document.getElementById('opening-screen').style.display = 'none';
-    showCaseTitle(); // Case 1のタイトル画面へ
-}
+            function typeOp() {
+                if (i < text.length) {
+                    const char = text.charAt(i);
+                    textBox.innerHTML += char === '\n' ? '<br>' : char;
+                    if (char !== ' ' && char !== '\n') playBeep('type');
+                    i++;
+                    typingTimer = setTimeout(typeOp, 60); 
+                } else {
+                    isTyping = false;
+                    typingTimer = null;
+                    footer.style.opacity = "1";
+                }
+            }
+            typeOp();
+            
+            screen.onclick = () => {
+                if (isTyping) {
+                    if (typingTimer) clearTimeout(typingTimer);
+                    isTyping = false;
+                    typingTimer = null;
+                    textBox.innerHTML = text.replace(/\n/g, '<br>');
+                    footer.style.opacity = "1";
+                }
+            };
+        }
+
+        function endOpening() {
+            event.stopPropagation();
+            document.getElementById('opening-screen').style.display = 'none';
+            showCaseTitle(); 
+        }
 
         function showCaseTitle() {
             document.getElementById('game-container').style.display = 'none';
@@ -833,7 +731,7 @@ function endOpening() {
                     typingTimer = setTimeout(type, 30);
                 } else {
                     isTyping = false;
-                    typingTimer = null; // 終わったら空にする
+                    typingTimer = null; 
                     showChoices(problem.choices);
                 }
             }
@@ -851,41 +749,34 @@ function endOpening() {
             });
         }
 
-        // --- 新しいモーダル表示関数 ---
-function showModal(title, contentHtml, buttons) {
-    const screen = document.getElementById('result-screen');
-    const titleEl = document.getElementById('rs-title');
-    const contentEl = document.getElementById('rs-content');
-    const footerEl = document.getElementById('rs-footer');
+        function showModal(title, contentHtml, buttons) {
+            const screen = document.getElementById('result-screen');
+            const titleEl = document.getElementById('rs-title');
+            const contentEl = document.getElementById('rs-content');
+            const footerEl = document.getElementById('rs-footer');
 
-    // タイトル設定（正解なら黄色、ミスなら赤っぽく）
-    titleEl.innerText = title;
-    titleEl.style.color = (title === 'CORRECT!' || title === '正解！') ? '#ffff00' : '#ff3333';
+            titleEl.innerText = title;
+            titleEl.style.color = (title === 'CORRECT!' || title === '正解！') ? '#ffff00' : '#ff3333';
+            contentEl.innerHTML = contentHtml;
 
-    // 本文設定
-    contentEl.innerHTML = contentHtml;
+            footerEl.innerHTML = "";
+            buttons.forEach(btnConfig => {
+                const btn = document.createElement('button');
+                btn.className = 'btn';
+                btn.innerText = btnConfig.text;
+                btn.onclick = btnConfig.action;
+                btn.style.margin = "0 10px";
+                footerEl.appendChild(btn);
+            });
 
-    // ボタン生成
-    footerEl.innerHTML = "";
-    buttons.forEach(btnConfig => {
-        const btn = document.createElement('button');
-        btn.className = 'btn';
-        btn.innerText = btnConfig.text;
-        btn.onclick = btnConfig.action;
-        btn.style.margin = "0 10px";
-        footerEl.appendChild(btn);
-    });
+            screen.style.display = 'flex';
+        }
 
-    // 表示
-    screen.style.display = 'flex';
-}
-
-      // --- handleAnswerの書き換え ---
-function handleAnswer(choice) {
+        // --- 修正版 handleAnswer ---
+        function handleAnswer(choice) {
             if (isTyping) return;
 
             if (choice.result === 'win') {
-                // === 正解の場合 ===
                 playBeep('correct');
 
                 const meta = CASES_META[currentCaseIndex];
@@ -895,16 +786,15 @@ function handleAnswer(choice) {
         <span style="color:#ffcc00">${choice.ending}</span><br><br>
         <span style="color:#00ffff; font-style:italic;">"${quote}"</span>`;
 
-                // 「次の事件へ」ボタンの動作
                 const nextAction = () => {
-                    document.getElementById('result-screen').style.display = 'none'; // モーダルを閉じる
+                    document.getElementById('result-screen').style.display = 'none';
 
-                    if (currentCaseIndex < CASES_META.length - 1) { // まだ事件がある場合
+                    if (currentCaseIndex < CASES_META.length - 1) {
                         currentCaseIndex++;
                         saveProgress();
                         showCaseTitle();
                     } else {
-                        // ★ここを修正：アラートではなくエンディング関数を呼ぶ
+                        // Case 50クリア後はエンディングへ
                         playEnding(); 
                     }
                 };
@@ -920,9 +810,7 @@ function handleAnswer(choice) {
                 );
 
             } else {
-                // === 不正解の場合 ===
                 playBeep('damage');
-
                 document.getElementById('game-container').classList.add('shake');
                 setTimeout(() => document.getElementById('game-container').classList.remove('shake'), 500);
 
@@ -950,36 +838,6 @@ function handleAnswer(choice) {
             }
         }
 
-        function showResult(choice) {
-            const meta = CASES_META[currentCaseIndex];
-            const msgBox = document.getElementById('message-box');
-            const quote = lang === 'jp' ? meta.quote_jp : meta.quote_en;
-
-            msgBox.innerHTML += `<br><br><span style="color:#ffff00">正解！</span><br><br><span style="color:#00ffff">${choice.correctMsg}</span><br><br><span style="color:#ffcc00">${choice.ending}</span><br><br><span style="color:#00ffff">"${quote}"</span><br><br>`;
-            msgBox.scrollTop = msgBox.scrollHeight;
-
-            document.getElementById('command-box').innerHTML = "";
-
-            const nextBtn = document.createElement('button');
-            nextBtn.className = 'btn';
-
-            if (currentCaseIndex < 49) {
-                nextBtn.innerText = lang === 'jp' ? "次の事件へ" : "NEXT CASE";
-                nextBtn.onclick = () => {
-                    currentCaseIndex++;
-                    saveProgress();
-                    showCaseTitle();
-                };
-            } else {
-                nextBtn.innerText = "THE END";
-                nextBtn.className = 'btn glitch-effect'; // 最後のボタンに少し演出を
-                nextBtn.onclick = () => {
-                    playEnding(); // 新しいエンディング関数を呼ぶ
-                };
-            }
-            document.getElementById('command-box').appendChild(nextBtn);
-        }
-
         function updateHP() {
             let bar = "";
             for (let i = 0; i < 5; i++) bar += i < hp ? "■" : "□";
@@ -988,33 +846,37 @@ function handleAnswer(choice) {
             el.style.color = hp <= 2 ? "#ff3333" : "#33ff00";
         }
 
-        // エンディング演出
+        // --- 修正版 playEnding ---
         function playEnding() {
-            const screen = document.getElementById('game-container');
+            const screen = document.getElementById('game-container'); // ★修正: 正しいコンテナを指定
+            
+            // 安全策：データ取得
             const data = casesFromJSON[49]; 
-            const endText = lang === 'jp' ? data.ending_jp : data.ending_en;
+            const endText = data 
+                ? (lang === 'jp' ? data.ending_jp : data.ending_en)
+                : "Dawn comes...";
 
-            // 画面を暗転・一掃
             screen.innerHTML = '';
-            screen.style.justifyContent = 'flex-start'; // 上から流れるように
-            screen.style.overflowY = 'auto'; // スクロール可能に
+            screen.style.display = 'flex'; // コンテナ自体を表示状態にする
+            screen.style.justifyContent = 'flex-start'; 
+            screen.style.overflowY = 'auto'; 
 
-            // エンドロール用コンテナ
             const endContainer = document.createElement('div');
             endContainer.style.maxWidth = '600px';
             endContainer.style.padding = '40px 20px';
             endContainer.style.textAlign = 'center';
+            endContainer.style.margin = '0 auto'; 
             endContainer.style.animation = 'fadeIn 3s ease-in';
             
-            // 1. エピローグ（Case 50のエンディングテキスト）
+            // 1. エピローグ
             const epilogue = document.createElement('div');
             epilogue.innerHTML = endText.replace(/\n/g, '<br>');
             epilogue.style.marginBottom = '80px';
             epilogue.style.lineHeight = '2.0';
-            epilogue.style.color = '#ffcc00'; // フラッシュバックカラー
+            epilogue.style.color = '#ffcc00'; 
             endContainer.appendChild(epilogue);
 
-            // 2. スタッフクレジット
+            // 2. クレジット
             const creditsData = [
                 { role: "DETECTIVE OF DISSONANCE", name: "" }, // 余白
                 { role: "Director & Programmer", name: "Gemini3.0Pro & buro" },
@@ -1030,33 +892,34 @@ function handleAnswer(choice) {
                 const roleEl = document.createElement('div');
                 roleEl.innerText = credit.role;
                 roleEl.style.fontSize = '0.8rem';
-                roleEl.style.color = '#1a8000'; // 暗めの緑
+                roleEl.style.color = '#1a8000'; 
                 
                 const nameEl = document.createElement('div');
                 nameEl.innerText = credit.name;
                 nameEl.style.fontSize = '1.2rem';
                 nameEl.style.color = '#33ff00';
                 nameEl.style.textShadow = '0 0 5px #33ff00';
+                if(credit.name === "") nameEl.style.height = "20px"; 
 
                 row.appendChild(roleEl);
                 row.appendChild(nameEl);
                 endContainer.appendChild(row);
             });
 
-            // 3. タイトルへ戻るボタン
+            // 3. 戻るボタン
             const backBtn = document.createElement('button');
             backBtn.className = 'btn';
             backBtn.innerText = "RETURN TO TITLE";
             backBtn.style.marginTop = '60px';
+            backBtn.style.border = '1px solid #1a8000';
             backBtn.onclick = () => {
                 resetGame();
-                location.reload(); // 完全リセット
+                location.reload(); 
             };
             endContainer.appendChild(backBtn);
 
             screen.appendChild(endContainer);
             
-            // 自動スクロール演出（ゆっくり下へ）
             setTimeout(() => {
                 endContainer.scrollIntoView({ behavior: 'smooth', block: 'end' });
             }, 1000);
