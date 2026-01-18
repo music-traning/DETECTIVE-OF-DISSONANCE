@@ -466,7 +466,7 @@ As a detective of dissonance.`
            const intro = lang === 'jp' ? (caseData.intro_jp || "") : (caseData.intro_en || "");
             const problem = lang === 'jp' ? (caseData.problem_jp || "") : (caseData.problem_en || "");
             const correctMsg = lang === 'jp' ? (caseData.correct_msg_jp || "") : (caseData.correct_msg_en || "");
-            const ending = lang === 'jp' ? caseData.ending_jp : caseData.ending_en;
+            const ending = lang === 'jp' ? (caseData.ending_jp || "") : (caseData.ending_en || "");
 
             // 選択肢を生成
             const choices = caseData.choices.map((ch, idx) => {
